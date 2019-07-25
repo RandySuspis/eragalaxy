@@ -1,0 +1,14 @@
+{
+    "name": "M01Login",
+    "alias": "m01Login",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\M01Login\\Providers\\LoginServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

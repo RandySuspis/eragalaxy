@@ -1,0 +1,28 @@
+@import "../../../../2App/baseTheme.scss";
+
+
+.form-edit-profile{
+
+  .image_upload{
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  margin-top:50px;
+  margin-bottom: 50px;
+
+  .editprofile_btn{
+    width:100%;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: $color-primary !important;
+    color: $color-onPrimary !important;;
+    border-color: $color-primary !important;;
+    &:hover{
+      background-color: $color-primary !important;
+    }
+  }
+}

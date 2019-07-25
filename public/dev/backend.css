@@ -1,0 +1,307 @@
+.skin-blue .main-header .navbar {
+  background-color: #EC2029; }
+
+.skin-blue .main-header .logo {
+  background-color: white; }
+
+.skin-blue .main-header .logo:hover {
+  background-color: white; }
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+  background-color: white; }
+
+.table > thead:first-child > tr:first-child > th {
+  background-color: #F4F4F4;
+  color: #EC2029;
+  border: none;
+  padding: 15px 15px;
+  text-transform: uppercase; }
+
+table.dataTable thead .sorting:after {
+  content: ''; }
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: white;
+  color: #888; }
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: white;
+  color: #888; }
+
+table.table-bordered.dataTable tbody td {
+  border: none;
+  border-bottom: #eee 0.5px solid;
+  padding: 10px 10px; }
+
+.DefaultDetailView {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.75); }
+  .DefaultDetailView .header {
+    padding: 20px 0px;
+    border-bottom: 0.5px solid #061625;
+    font: 17px Raleway;
+    line-height: 35px;
+    margin: 10px auto 20px; }
+  .DefaultDetailView .contentSection {
+    padding: 10px; }
+    .DefaultDetailView .contentSection .columnSection {
+      text-align: right;
+      overflow: hidden;
+      word-wrap: break-word;
+      font: 17px Raleway;
+      font-weight: bold;
+      color: #061625; }
+    .DefaultDetailView .contentSection .valueSection {
+      text-align: left;
+      font: 17px Raleway; }
+  .DefaultDetailView .footer {
+    padding: 20px 0px;
+    border-top: 1px solid #061625;
+    font: 17px Raleway;
+    line-height: 35px;
+    margin: 10px auto 20px; }
+
+.CatalogCard .contentTable .randyCard {
+  display: inline-block;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 20px -10px rgba(0, 0, 0, 0.75);
+  margin-bottom: 30px; }
+
+.CatalogCard .contentTable.even {
+  background-color: transparent; }
+
+.CatalogCard .contentTable.odd {
+  background-color: transparent; }
+
+.baseCrudCreate,
+.baseCrudUpdate {
+  padding: 50px 20px 20px 20px; }
+  .baseCrudCreate .labelSection,
+  .baseCrudUpdate .labelSection {
+    text-align: left;
+    display: block;
+    color: #061625;
+    font: 16px Raleway;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 1200px) {
+      .baseCrudCreate .labelSection,
+      .baseCrudUpdate .labelSection {
+        text-align: right;
+        margin-bottom: 0px; } }
+  .baseCrudCreate .inputSection,
+  .baseCrudUpdate .inputSection {
+    display: block; }
+  .baseCrudCreate .errorSection,
+  .baseCrudUpdate .errorSection {
+    padding-top: 7px; }
+    .baseCrudCreate .errorSection .errorMessage,
+    .baseCrudUpdate .errorSection .errorMessage {
+      color: #eee;
+      font: 15px Raleway;
+      margin-top: 5px;
+      background-color: #faa;
+      display: inline;
+      padding: 5px 5px; }
+  .baseCrudCreate .btn-submit-randy,
+  .baseCrudUpdate .btn-submit-randy {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px; }
+
+.BaseToast {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1500;
+  justify-content: center;
+  align-self: center;
+  display: flex !important;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.15s linear; }
+  .BaseToast.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.15s linear; }
+  .BaseToast.hide {
+    visibility: visible;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.15s linear; }
+  .BaseToast .innerPopup {
+    position: absolute;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    max-width: 80%;
+    border-radius: 20px;
+    border: 5px solid #061625;
+    background-color: #F8F8F8; }
+    .BaseToast .innerPopup .closeButton {
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      display: block;
+      background: white;
+      padding: 2px;
+      border-radius: 3px;
+      z-index: 1600; }
+    .BaseToast .innerPopup .popupContentHolder {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: hidden; }
+    .BaseToast .innerPopup .popupContent > div {
+      overflow-y: scroll;
+      max-height: calc(100vh - 210px);
+      padding-right: 17px;
+      width: 100%;
+      box-sizing: content-box; }
+
+#propertyAgentList .columnHeader {
+  text-transform: uppercase; }
+
+#propertyAgentList .contentTable {
+  display: block; }
+  #propertyAgentList .contentTable .randyRow {
+    padding-left: 20px; }
+  #propertyAgentList .contentTable .randyHiddenRow {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 60px;
+    display: block; }
+    #propertyAgentList .contentTable .randyHiddenRow .propertyPercent {
+      margin-top: 15px; }
+
+#propertyAgentList .columnHeader {
+  text-transform: uppercase; }
+
+#propertyAgentList .contentTable {
+  display: block; }
+  #propertyAgentList .contentTable .randyRow {
+    padding-left: 20px; }
+  #propertyAgentList .contentTable .randyHiddenRow {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 60px;
+    display: block; }
+    #propertyAgentList .contentTable .randyHiddenRow .propertyPercent {
+      margin-top: 15px; }
+
+#primaryPropertyList .columnHeader {
+  text-transform: uppercase; }
+
+#primaryPropertyList .contentTable {
+  display: block; }
+  #primaryPropertyList .contentTable .randyRow {
+    padding-left: 20px; }
+  #primaryPropertyList .contentTable .randyHiddenRow {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 60px;
+    display: block; }
+    #primaryPropertyList .contentTable .randyHiddenRow .propertyPercent {
+      margin-top: 15px; }
+
+.transaction-form {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .transaction-form code {
+    display: block;
+    width: 100%;
+    overflow: auto; }
+  .transaction-form .percent-show, .transaction-form .field-number {
+    text-align: right; }
+  .transaction-form .labelSection {
+    text-align: left; }
+  @media screen and (min-width: 1200px) {
+    .transaction-form .labelSection {
+      text-align: left;
+      margin-bottom: 0px; } }
+  @media only screen and (min-width: 992px) {
+    .transaction-form .percent-show {
+      max-width: 90px; }
+    .transaction-form .dateSelect {
+      max-width: 300px; }
+    .transaction-form .field-number {
+      max-width: 300px; } }
+  .transaction-form .total-pph-section input {
+    float: right; }
+  .transaction-form .formTransaction {
+    max-width: 800px;
+    margin: 0px auto; }
+  .transaction-form .panel {
+    margin-top: 20px;
+    padding-top: 20px; }
+    .transaction-form .panel .totalNumber {
+      background-color: #FFEDC4;
+      color: #333333;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 20px; }
+  .transaction-form .banner {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px; }
+  .transaction-form .comission-result {
+    padding: 20px 0px; }
+    .transaction-form .comission-result .input-group {
+      display: inline-block;
+      background-color: #FFEDC4;
+      color: #333333;
+      padding-top: 10px; }
+  .transaction-form .calculation-result input {
+    max-width: 9999999px;
+    text-align: right;
+    border: none;
+    font-size: 120%;
+    font-weight: bold;
+    background: transparent;
+    margin-top: -9px; }
+  .transaction-form .pph-section .form-group {
+    margin-bottom: 5px; }
+  .transaction-form .line-plus span.line {
+    width: 90%;
+    padding: 1px;
+    background-color: black;
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 4px; }
+  .transaction-form .line-plus span.plus {
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 10px; }
+  @media only screen and (max-width: 992px) {
+    .transaction-form .line-plus span.plus {
+      float: right; } }
+  .transaction-form .coor-detail-card label {
+    background-color: #E6E6E6;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .transaction-form .coor-detail-card > div {
+    max-width: 360px;
+    margin: 0px 30px; }
+
+#transactionCreate, #transactionPrimaryCreate {
+  background-color: transparent; }
+  #transactionCreate .transaction-box, #transactionPrimaryCreate .transaction-box {
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block; }
+
+
+/*# sourceMappingURL=backend.css.map*/

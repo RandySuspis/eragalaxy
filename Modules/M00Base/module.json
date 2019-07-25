@@ -1,0 +1,14 @@
+{
+    "name": "M00Base",
+    "alias": "M00Base",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\M00Base\\Providers\\M00BaseServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

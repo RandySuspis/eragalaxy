@@ -1,0 +1,61 @@
+@import "../../../2App/baseTheme.scss";
+
+.DefaultBaseInfiniteTable{
+  padding: 20px;
+
+  .header{
+    background-color: $color-surfaceColor;
+    padding: 20px 20px 5px;
+    border-bottom: 2px $color-primary solid;
+    input{
+      width: 100%;
+    }
+    a{
+      color: white;
+    }
+
+    .columnHeader{
+      display: block;
+      min-height: 29px;
+      font: $typo-headline5;
+      font-weight: bold;
+      color:$color-primary;
+      text-align: left;
+      overflow: hidden;
+      overflow-wrap: break-word;
+
+    }
+  }
+
+  .contentTable{
+    display:inline;
+    overflow: hidden;
+    width: 100%;
+
+
+
+    &.odd{
+      .randyRow,.randyHiddenRow{
+        padding: 20px 0px;
+        background-color: white;
+      }
+    }
+
+    &.even{
+      .randyRow,.randyHiddenRow{
+        padding: 20px 0px;
+        background-color: #eee;
+      }
+    }
+
+  }
+
+  .footer{
+    text-align: center;
+    padding: 20px;
+    .btn{
+      min-width: 300px;
+    }
+  }
+
+}

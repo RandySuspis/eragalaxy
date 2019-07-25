@@ -1,0 +1,166 @@
+@import "../../../../2App/baseTheme.scss";
+
+
+
+.transaction-form{
+  padding-top:30px;
+  padding-bottom:30px;
+
+  code{
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .percent-show, .field-number{
+    text-align: right;
+  }
+
+  .labelSection{
+    text-align: left
+  }
+
+  @media screen and (min-width: $bootstrap-lg-min-width) {
+    .labelSection{
+      text-align: left;
+      margin-bottom: 0px;
+    }
+  }
+
+  @media only screen and (min-width: $bootstrap-md-min-width) {
+
+    .percent-show{
+      max-width: 90px;
+    }
+
+    .dateSelect{
+      max-width: 300px;
+    }
+
+    .field-number{
+      max-width: 300px;
+    }
+  }
+
+  .total-pph-section{
+    input{
+      float: right;
+    }
+  }
+
+  .formTransaction{
+    max-width: 800px;
+    margin: 0px auto;
+  }
+
+  .panel{
+    margin-top:20px;
+    padding-top: 20px;
+
+    .totalNumber{
+      background-color: $color-secondaryColor;
+      color: $color-onSecondaryColor;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 20px;;
+    }
+
+  }
+
+  .banner{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .comission-result{
+    padding: 20px 0px;
+
+    .input-group{
+      display: inline-block;
+      background-color: $color-secondaryColor;
+      color: $color-onSecondaryColor;
+      padding-top: 10px;
+    }
+  }
+
+  .calculation-result{
+    input{
+      max-width: 9999999px;
+      text-align: right;
+      border: none;
+      font-size: 120%;
+      font-weight: bold;
+      background: transparent;
+      margin-top: -9px;
+    }
+  }
+
+  // PPH SECTION =========
+  .commission-section{
+    background: lightblue;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    .form-group{
+      margin-bottom: 0px;
+    }
+  }
+
+  .pph-section{
+    .form-group{
+      margin-bottom: 5px;
+    }
+  }
+
+  // Line PLUs ==========
+  .line-plus{
+      span.line {
+        width: 90%;
+        padding: 1px;
+        background-color: black;
+        display: inline-block;
+        margin-left: 5%;
+        margin-bottom: 4px;
+      }
+      span.plus{
+        display: inline-block;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+      @media only screen and (max-width: $bootstrap-md-min-width) {
+        span.plus{
+          float:right;
+        }
+      }
+    }
+
+  // Card Coor Detail  ==========
+  .coor-detail-card{
+    label{
+      background-color: $color-onSurfaceColor;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    & > div{
+      max-width: 360px;
+      margin: 0px 30px;
+    }
+  }
+
+
+  // END
+}
+
+#transactionCreate, #transactionPrimaryCreate{
+  background-color: transparent;
+  .transaction-box{
+    border-top: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+  }
+}

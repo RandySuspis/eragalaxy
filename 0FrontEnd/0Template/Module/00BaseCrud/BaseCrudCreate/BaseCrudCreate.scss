@@ -1,0 +1,43 @@
+@import "../../../../2App/baseTheme.scss";
+
+.baseCrudCreate,
+.baseCrudUpdate{
+  padding: 50px 20px 20px 20px;
+
+  .labelSection{
+    text-align: left;
+    display: block;
+    @media screen and (min-width: $bootstrap-lg-min-width) {
+      text-align: right;
+      margin-bottom: 0px;
+    }
+    color:$color-primary;
+    font: $typo-headline5;
+    margin-bottom: 10px;
+  }
+
+  .inputSection{
+    display: block;
+  }
+
+  .errorSection{
+    padding-top: 7px;
+    .errorMessage{
+      color: #eee;
+      font: 15px Raleway;
+      margin-top:5px;
+      background-color: #faa;
+      display: inline;
+      padding:5px 5px;
+    }
+  }
+
+
+
+  .btn-submit-randy{
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+  }
+}
+

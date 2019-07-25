@@ -1,0 +1,9 @@
+[{
+    "key" : "",
+    "name" : "M01Login",
+    "required" : []
+}, {
+    "key" : "agent",
+    "name" : "M02PropertyAgent",
+    "required" : ["M01Login"]
+}]

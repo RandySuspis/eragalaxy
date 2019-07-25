@@ -1,0 +1,14 @@
+{
+    "name": "M02PropertyAgent",
+    "alias": "m02PropertyAgent",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\M02PropertyAgent\\Providers\\PropertyAgentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/m03propertytransaction",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\M03PropertyTransaction\\Providers\\M03PropertyTransactionServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\M03PropertyTransaction\\": ""
+        }
+    }
+}

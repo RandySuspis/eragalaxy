@@ -1,0 +1,71 @@
+@import "../../../../2App/baseTheme.scss";
+
+.form-register{
+  position: relative;
+  .img-logo{
+    width: 70%;
+    margin-bottom: 10%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .help-block {
+    margin-bottom: -3%;
+    width: 100%;
+  }
+
+  .label-register{
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .register_btn{
+    width:100%;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: $color-primary !important;
+    color: $color-onPrimary !important;;
+    border-color: $color-primary !important;;
+    &:hover{
+      background-color: $color-primary !important;
+    }
+  }
+
+
+  .register_google_btn{
+    width:100%;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: $color-googleColor !important;
+    color: $color-onPrimary !important;;
+    border-color: $color-googleColor !important;;
+    &:hover{
+      background-color: $color-googleColor !important;
+    }
+  }
+
+
+
+  .register_facebook_btn{
+    width:100%;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: $color-facebookColor !important;
+    color: $color-onPrimary !important;;
+    border-color: $color-facebookColor !important;;
+    &:hover{
+      background-color: $color-facebookColor !important;
+    }
+  }
+}

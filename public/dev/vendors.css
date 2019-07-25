@@ -1,0 +1,490 @@
+.form-login {
+  padding: 50px;
+  position: relative;
+  text-align: center; }
+  .form-login .img-logo {
+    width: 70%;
+    margin-bottom: 10%; }
+  .form-login .input-group {
+    width: 100%; }
+  .form-login .help-block {
+    margin-bottom: -3%;
+    width: 100%; }
+  .form-login .label-login {
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal; }
+  .form-login .login_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #061625 !important;
+    color: white !important;
+    border-color: #061625 !important; }
+    .form-login .login_btn:hover {
+      background-color: #061625 !important; }
+  .form-login .login_google_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #e33b13 !important;
+    color: white !important;
+    border-color: #e33b13 !important; }
+    .form-login .login_google_btn:hover {
+      background-color: #e33b13 !important; }
+  .form-login .login_facebook_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #147bdb !important;
+    color: white !important;
+    border-color: #147bdb !important; }
+    .form-login .login_facebook_btn:hover {
+      background-color: #147bdb !important; }
+
+.dateSelect {
+  margin: 0px;
+  padding: 0px;
+  height: 34px; }
+  .dateSelect .react-datepicker-wrapper {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 34px; }
+    .dateSelect .react-datepicker-wrapper .react-datepicker__input-container {
+      width: 100%;
+      padding: 0px;
+      margin: 0px; }
+  .dateSelect .react-datepicker-popper {
+    z-index: 3; }
+
+.fieldSelect > div:first-child {
+  position: unset; }
+
+.fieldSelect .randy__menu {
+  z-index: 4; }
+
+.fieldSelect .randy__menu-list {
+  z-index: 4; }
+
+.react-datepicker {
+  font-size: 1em; }
+  .react-datepicker .react-datepicker__header {
+    padding-top: 0.8em; }
+  .react-datepicker .react-datepicker__month {
+    margin: 0.4em 1em; }
+  .react-datepicker .react-datepicker__day-name, .react-datepicker .react-datepicker__day {
+    width: 1.9em;
+    line-height: 1.9em;
+    margin: 0.166em; }
+  .react-datepicker .react-datepicker__current-month {
+    font-size: 1em; }
+  .react-datepicker .react-datepicker__navigation {
+    top: 1em;
+    line-height: 1.7em;
+    border: 0.45em solid transparent; }
+  .react-datepicker .react-datepicker__navigation--previous {
+    border-right-color: #ccc;
+    left: 1em; }
+  .react-datepicker .react-datepicker__navigation--next {
+    border-left-color: #ccc;
+    right: 1em; }
+
+.radioSection .radioLabel {
+  padding: 0px 10px; }
+
+#imageDisplay {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+  cursor: pointer;
+  background: #f4f4f4;
+  display: table;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.35); }
+  #imageDisplay .dashes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 4px dashed #ddd;
+    opacity: 1; }
+  #imageDisplay label {
+    background: rgba(255, 255, 255, 0.5);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;
+    color: grey;
+    opacity: 1; }
+  #imageDisplay.dragging {
+    background-image: none !important; }
+    #imageDisplay.dragging .dashes {
+      animation-duration: 10s;
+      animation-name: spin;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      opacity: 1 !important; }
+    #imageDisplay.dragging label {
+      opacity: 0.5 !important; }
+  #imageDisplay.hasImage .dashes, #imageDisplay.hasImage label {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none; }
+
+.form-signup {
+  width: 23%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .form-signup .img-logo {
+    width: 70%;
+    margin-bottom: 10%; }
+  .form-signup .input-group {
+    width: 100%; }
+  .form-signup .errorMessage {
+    color: #eee;
+    font: 15px Raleway;
+    margin-top: 5px;
+    background-color: #faa;
+    display: inline;
+    padding: 5px 5px; }
+  .form-signup .label-signup {
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal; }
+  .form-signup .signup_btn {
+    background-color: #061625;
+    color: white;
+    border-color: #061625; }
+    .form-signup .signup_btn:hover {
+      background-color: #061625; }
+  .form-signup .signup_btn.disabled {
+    background-color: #061625;
+    color: white;
+    border-color: #061625; }
+    .form-signup .signup_btn.disabled:hover {
+      background-color: black; }
+
+.form-forgot-password {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .form-forgot-password .input-group {
+    width: 100%; }
+  .form-forgot-password .help-block {
+    margin-bottom: -3%;
+    width: 100%; }
+  .form-forgot-password .label-forgot-password {
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+    font-weight: normal; }
+  .form-forgot-password .forgot_password_btn {
+    background-color: #061625;
+    color: white;
+    border-color: #061625; }
+    .form-forgot-password .forgot_password_btn:hover {
+      background-color: #061625; }
+
+.profileDiv h1 {
+  text-align: center; }
+
+.profileDiv .smallText {
+  font-size: 0.8em;
+  text-align: center; }
+
+.profileDiv .bigText {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px; }
+  .profileDiv .bigText a {
+    color: #000; }
+
+.profileDiv .imgContainer {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%; }
+
+.profileDiv .cardDesc {
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .profileDiv .cardDesc p {
+    vertical-align: baseline;
+    padding-top: 10px; }
+
+.profileDiv .btn-profile {
+  background: #061625;
+  color: white;
+  width: 100%;
+  font-size: 0.7em; }
+
+.changepass_btn {
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: auto;
+  background-color: #061625 !important;
+  color: white !important;
+  border-color: #061625 !important; }
+  .changepass_btn:hover {
+    background-color: #061625 !important; }
+
+.form-edit-profile {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .form-edit-profile .image_upload {
+    margin-top: 20px;
+    margin-bottom: 50px; }
+  .form-edit-profile .editprofile_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #061625 !important;
+    color: white !important;
+    border-color: #061625 !important; }
+    .form-edit-profile .editprofile_btn:hover {
+      background-color: #061625 !important; }
+
+.form-register {
+  position: relative; }
+  .form-register .img-logo {
+    width: 70%;
+    margin-bottom: 10%; }
+  .form-register .input-group {
+    width: 100%; }
+  .form-register .help-block {
+    margin-bottom: -3%;
+    width: 100%; }
+  .form-register .label-register {
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal; }
+  .form-register .register_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #061625 !important;
+    color: white !important;
+    border-color: #061625 !important; }
+    .form-register .register_btn:hover {
+      background-color: #061625 !important; }
+  .form-register .register_google_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #e33b13 !important;
+    color: white !important;
+    border-color: #e33b13 !important; }
+    .form-register .register_google_btn:hover {
+      background-color: #e33b13 !important; }
+  .form-register .register_facebook_btn {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    background-color: #147bdb !important;
+    color: white !important;
+    border-color: #147bdb !important; }
+    .form-register .register_facebook_btn:hover {
+      background-color: #147bdb !important; }
+
+.benefitsTitle {
+  font-weight: 700;
+  font-size: 50px; }
+
+.container-benefits .content-benefits {
+  margin: 5% 0; }
+  .container-benefits .content-benefits .card-item {
+    border-radius: 10px; }
+    .container-benefits .content-benefits .card-item .card-title.Basic {
+      background-image: linear-gradient(to right, deeppink, blue); }
+    .container-benefits .content-benefits .card-item .card-title.Silver {
+      background-image: linear-gradient(to right, gray, lightgray); }
+    .container-benefits .content-benefits .card-item .card-title.Gold {
+      background-image: linear-gradient(to right, orange, gold); }
+    .container-benefits .content-benefits .card-item .card-title {
+      text-align: center;
+      font-weight: 600;
+      padding: 5% 0; }
+    .container-benefits .content-benefits .card-item .content-title {
+      font-weight: 600;
+      font-size: 15px; }
+    .container-benefits .content-benefits .card-item .content-desc {
+      margin-bottom: 0; }
+
+.EmptyList {
+  min-width: 300px;
+  min-height: 300px;
+  padding: 20px;
+  display: block;
+  background-color: white;
+  text-align: center; }
+
+.Paging {
+  display: block; }
+  .Paging .PagingNumber {
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px 0px;
+    border-bottom: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    color: #717171; }
+    .Paging .PagingNumber:hover {
+      background-color: #b3b3b3; }
+    .Paging .PagingNumber.active {
+      color: #061625; }
+    .Paging .PagingNumber.first {
+      border: 1px solid #E6E6E6;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      font-weight: bold; }
+    .Paging .PagingNumber.last {
+      border: 1px solid #E6E6E6;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      font-weight: bold; }
+
+.EmptyList {
+  min-width: 300px;
+  min-height: 300px;
+  padding: 20px;
+  display: block;
+  background-color: white;
+  text-align: center; }
+
+.BaseModal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1500;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.15s linear; }
+  .BaseModal.flexibleWidth {
+    justify-content: center;
+    align-self: center;
+    display: flex !important;
+    text-align: center; }
+  .BaseModal.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.15s linear; }
+  .BaseModal.hide {
+    visibility: visible;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.15s linear; }
+  .BaseModal .innerModal {
+    position: absolute;
+    margin: 0px 40px;
+    padding: 20px;
+    background: white; }
+    .BaseModal .innerModal .closeButton {
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      display: block;
+      background: white;
+      padding: 2px;
+      border-radius: 3px;
+      z-index: 1600; }
+    .BaseModal .innerModal .ModalContentHolder {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: hidden; }
+    .BaseModal .innerModal .ModalContent > div {
+      overflow-y: scroll;
+      max-height: calc(100vh - 210px);
+      padding-right: 17px;
+      width: 100%;
+      box-sizing: content-box; }
+
+.DefaultBaseInfiniteTable {
+  padding: 20px; }
+  .DefaultBaseInfiniteTable .header {
+    background-color: #F8F8F8;
+    padding: 20px 20px 5px;
+    border-bottom: 2px #061625 solid; }
+    .DefaultBaseInfiniteTable .header input {
+      width: 100%; }
+    .DefaultBaseInfiniteTable .header a {
+      color: white; }
+    .DefaultBaseInfiniteTable .header .columnHeader {
+      display: block;
+      min-height: 29px;
+      font: 16px Raleway;
+      font-weight: bold;
+      color: #061625;
+      text-align: left;
+      overflow: hidden;
+      overflow-wrap: break-word; }
+  .DefaultBaseInfiniteTable .contentTable {
+    display: inline;
+    overflow: hidden;
+    width: 100%; }
+    .DefaultBaseInfiniteTable .contentTable.odd .randyRow, .DefaultBaseInfiniteTable .contentTable.odd .randyHiddenRow {
+      padding: 20px 0px;
+      background-color: white; }
+    .DefaultBaseInfiniteTable .contentTable.even .randyRow, .DefaultBaseInfiniteTable .contentTable.even .randyHiddenRow {
+      padding: 20px 0px;
+      background-color: #eee; }
+  .DefaultBaseInfiniteTable .footer {
+    text-align: center;
+    padding: 20px; }
+    .DefaultBaseInfiniteTable .footer .btn {
+      min-width: 300px; }
+
+.EmptyList {
+  min-width: 300px;
+  min-height: 300px;
+  padding: 20px;
+  display: block;
+  background-color: white;
+  text-align: center; }
+
+
+/*# sourceMappingURL=vendors.css.map*/

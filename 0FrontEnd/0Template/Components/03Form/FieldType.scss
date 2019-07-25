@@ -1,0 +1,140 @@
+@import "../../../2App/baseTheme.scss";
+
+.mdb-select{
+  width:100%;
+}
+
+.md-form{
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+.dateSelect{
+  margin: 0px;
+  padding:0px;
+  height: 34px;
+
+  .react-datepicker-wrapper{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 34px;
+
+    .react-datepicker__input-container{
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  .react-datepicker-popper{
+    z-index: 3;
+  }
+
+}
+
+.fieldSelect{
+  > div:first-child{
+    position: unset;
+  }
+  .randy__menu{
+    z-index: 4;
+
+  }
+  .randy__menu-list{
+    z-index: 4;
+
+  }
+}
+
+.react-datepicker {
+  font-size: 1em;
+  .react-datepicker__header {
+    padding-top: 0.8em;
+  }
+  .react-datepicker__month {
+    margin: 0.4em 1em;
+  }
+  .react-datepicker__day-name, .react-datepicker__day {
+    width: 1.9em;
+    line-height: 1.9em;
+    margin: 0.166em;
+  }
+  .react-datepicker__current-month {
+    font-size: 1em;
+  }
+  .react-datepicker__navigation {
+    top: 1em;
+    line-height: 1.7em;
+    border: 0.45em solid transparent;
+  }
+  .react-datepicker__navigation--previous {
+    border-right-color: #ccc;
+    left: 1em;
+  }
+  .react-datepicker__navigation--next {
+    border-left-color: #ccc;
+    right: 1em;
+  }
+}
+
+.radioSection{
+  .radioLabel{
+    padding: 0px 10px;
+  }
+}
+
+#imageDisplay {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: -80px;
+  margin-bottom: -80px;
+  cursor: pointer;
+  background: #f4f4f4;
+  display: table;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 5px 8px rgba(black, 0.35);
+  .dashes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 4px dashed #ddd;
+    opacity: 1;
+  }
+  label {
+    background:rgba(255,255,255,0.5);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 30px;
+    color: grey;
+    opacity: 1;
+  }
+  &.dragging {
+    background-image: none!important;
+    .dashes {
+      animation-duration: 10s;
+      animation-name: spin;
+      animation-iteration-count:infinite;
+      animation-timing-function: linear;
+      opacity: 1!important;
+    }
+    label {
+      opacity: 0.5!important;
+    }
+  }
+  &.hasImage {
+    .dashes, label {
+      opacity: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+}

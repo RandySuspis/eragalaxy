@@ -1,0 +1,45 @@
+@import "~/2App/baseTheme.scss";
+
+$borderPaging : 1px solid $color-onSurfaceColor;
+$radiusBorder : 5px;
+.Paging{
+  display: block;
+
+  .PagingNumber{
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px 0px;
+    border-bottom: $borderPaging;
+    border-top: $borderPaging;
+    color: $color-onBackgroundColor;
+
+    &:hover{
+      background-color: darken($color-onSurfaceColor, 20%);
+    }
+
+    &.active {
+      color: $color-primary;
+    }
+    &.first{
+      border: $borderPaging;
+      border-bottom-left-radius: $radiusBorder;
+      border-top-left-radius: $radiusBorder;
+      font-weight: bold;
+    }
+    &.last{
+      border: $borderPaging;
+      border-bottom-right-radius: $radiusBorder;
+      border-top-right-radius: $radiusBorder;
+      font-weight: bold;
+    }
+  }
+
+}
+.EmptyList{
+  min-width: 300px;
+  min-height: 300px;
+  padding:20px;
+  display: block;
+  background-color: white;
+  text-align: center;
+}

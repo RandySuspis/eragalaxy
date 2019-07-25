@@ -1,0 +1,424 @@
+@import "baseTheme";
+
+body{
+  font-family: "Open Sans";
+
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-accentColor;
+}
+
+
+H1{
+  font: 24px Raleway !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+}
+
+.headerBG{
+  background: $color-headerBackground;
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+  }
+}
+
+.mainBG{
+  background: $color-mainBackground;
+}
+
+.nav-drawer{
+  background: $color-headerBackground;
+}
+
+
+
+.side-content-left{
+  background: $color-headerBackground;
+  height: 40vh;
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+.side-content-top{
+  margin-right:0px;
+  margin-left:0px;
+  margin-top:0px;
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    margin-top:60px;
+  }
+
+}
+
+.side_btn{
+  margin: 0px;
+  padding: 20px !important;
+  text-align: center;
+  vertical-align: middle;
+  background: $color-accentColor;
+  color:$color-onPrimary;
+  position: absolute;
+  right: 0px;
+}
+
+.side-nav{
+  width:80% !important;
+}
+.side-nav.fixed{
+  background: $color-headerBackground;
+
+  .login-sidenav{
+    background: #ffffff;
+    li{
+      border-bottom:1px solid #ccc;
+    }
+    a{
+      color:#000000;
+      font-weight: bold;
+    }
+  }
+
+  .logout-sidenav{
+    background: $color-accentColor;
+
+    a{
+      color:#ffffff;
+      font-weight:bold;
+      text-align:center;
+      padding-left:0px;
+    }
+  }
+
+  .profile-sidenav{
+    padding: 20px;
+    background: #ffffff;
+    color:#000;
+
+    a{
+      color:#000;
+      font-size:0.8em;
+      font-weight: bold;
+
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+
+  .sidenav-menus{
+    background: $color-headerBackground;
+
+    li{
+      border-top: 1px solid #2c4660;
+    }
+
+    a{
+      color:#ffffff;
+      font-weight: bold;
+    }
+  }
+}
+
+.imgContainer{
+  float:left;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  margin-right:10px;
+}
+
+.profileData{
+  padding:10px;
+}
+
+
+.lineIndicatorBlue{
+  float:left;
+  width:20px;
+  padding:5px;
+  background: $color-indicatorBlue;
+  vertical-align:middle;
+  margin-right:20px;
+}
+
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+header {
+  padding: 156px 0 100px;
+}
+
+section {
+  padding: 150px 0;
+}
+
+.navbar{
+  background:$color-primary;
+  padding:0px;
+}
+
+.navbar .navbar-brand{
+  padding:20px;
+  margin-left:20px;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link{
+  color: rgba(255,255,255,.85);
+  font-size:0.9em;
+  -webkit-transition: .35s;
+  -o-transition: .35s;
+  transition: .35s;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+  color: rgba(255,255,255, 1);
+
+}
+
+.nav-item{
+  padding:20px;
+}
+
+.nav-login-account{
+  background:#fafafa;
+  border-left:1px solid #ccc;
+
+  a:hover{
+    color:#333333;
+  }
+
+  .nav-link{
+    font-weight: bold;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-login-account .nav-link{
+  color:#000000 !important;
+}
+
+
+
+.form-control::-webkit-input-placeholder { color: #ccc; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #ccc; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #ccc; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #ccc; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #ccc; }  /* Microsoft Edge */
+
+
+
+.react-datepicker-wrapper{
+  width:100%;
+}
+
+.react-datepicker__input-container{
+  width:100%;
+}
+
+
+.default_btn{
+  width:100%;
+  margin-top:0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: auto;
+  background-color: $color-primary !important;
+  color: $color-onPrimary !important;;
+  border-color: $color-primary !important;;
+  &:hover{
+    background-color: $color-primary !important;
+  }
+}
+
+
+
+
+
+
+
+
+.right-padding{
+  padding-right:50px;
+}
+
+.navbar_notification_content{
+  padding:10px;
+  border:1px solid #ccc;
+  position: absolute;
+  padding: 20px;
+  width: 300px;
+  left: -200px;
+  background: #fff;
+  border: 1px solid #ccc;
+  right: 0px;
+}
+
+.navbar_profile_content{
+  width: 300px;
+  right: 50px;
+  left: -100px;
+  padding: 0px;
+
+  .row{
+    margin-right:0px;
+    margin-left:0px;
+
+    .col{
+      padding:0px;
+    }
+
+    .profile_item{
+      border-bottom:1px solid #ccc;
+      border-right:1px solid #ccc;
+      text-align:center;
+
+      a{
+        padding:20px;
+        width:100%;
+        font-size:0.8em;
+        font-weight:bold;
+      }
+
+      img{
+        width:24px;
+        height:24px;
+        object-fit: contain;
+      }
+
+      .name{
+        text-align: center;
+      }
+    }
+
+    .profile_bottom{
+      padding:16px;
+      text-align:center;
+      background:#e237c7;
+      border-radius:0px 0px 4px 4px;
+
+      a{
+        color:#fff;
+        width:100%;
+        font-size:0.8em;
+        font-weight:bold;
+      }
+    }
+  }
+ }
+
+
+
+
+/*SIDE NAV*/
+.custom-scrollbar{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.touch-side-swipe{
+  background: $color-headerBackground;
+}
+
+.side-nav{
+  width:100% !important;
+}
+.side-nav.fixed{
+  background: $color-headerBackground;
+
+  .login-sidenav{
+    background: #ffffff;
+    li{
+      border-bottom:1px solid #ccc;
+    }
+    a{
+      color:#000000;
+      font-weight: bold;
+      padding:16px;
+    }
+  }
+
+  .logout-sidenav{
+    background: $color-accentColor;
+
+    a{
+      color:#ffffff;
+      font-weight:bold;
+      text-align:center;
+      padding:16px;
+    }
+  }
+
+  .profile-sidenav{
+    padding: 20px;
+    background: #ffffff;
+    color:#000;
+
+    a{
+      color:#000;
+      font-size:0.8em;
+      font-weight: bold;
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+
+  .sidenav-menus{
+    background: $color-headerBackground;
+
+    li{
+      border-top: 1px solid #2c4660;
+    }
+
+    a{
+      color:#ffffff;
+      font-weight: bold;
+      padding:16px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

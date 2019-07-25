@@ -1,0 +1,40 @@
+@import "../../../../2App/baseTheme.scss";
+
+.form-login{
+  width: 23%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  .img-logo{
+    width: 70%;
+    margin-bottom: 10%;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .help-block {
+    margin-bottom: -3%;
+    width: 100%;
+  }
+
+  .label-login{
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .login_btn{
+    background-color: $color-primary;
+    color: $color-onPrimary;
+    border-color: $color-primary;
+    &:hover{
+      background-color: $color-primary;
+    }
+  }
+
+}

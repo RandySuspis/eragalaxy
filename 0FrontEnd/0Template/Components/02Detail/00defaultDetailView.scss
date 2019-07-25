@@ -1,0 +1,46 @@
+@import "../../../2App/baseTheme.scss";
+
+.DefaultDetailView{
+
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px -10px rgba(0,0,0,0.75);
+
+  .header{
+    padding: 20px 0px;
+    border-bottom: 0.5px solid $color-primary;
+    font: $typo-headline4;
+    line-height: 35px;
+    margin: 10px auto 20px;
+  }
+
+  .contentSection{
+    padding: 10px;
+
+    .columnSection{
+      text-align: right;
+      overflow: hidden;
+      word-wrap: break-word;
+      font: $typo-headline4;
+      font-weight: bold;
+      color: $color-primary;
+    }
+
+    .valueSection{
+      text-align: left;
+      font: $typo-headline4;
+    }
+
+  }
+
+  .footer{
+    padding: 20px 0px;
+    border-top: 1px solid $color-primary;
+    font: $typo-headline4;
+    line-height: 35px;
+    margin: 10px auto 20px;
+  }
+
+
+}

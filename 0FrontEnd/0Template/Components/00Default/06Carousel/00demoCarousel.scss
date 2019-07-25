@@ -1,0 +1,28 @@
+@import "../../../../2App/baseTheme.scss";
+
+.carousel.carousel-slider{
+  border-bottom: solid 1px slategrey;
+}
+.carousel .slide .titleField{
+  position: absolute;
+  bottom: -16px;
+  margin-left: 15%;
+  width: 70%;
+  background: #061625;
+  border: solid 0.1px slategrey;
+  padding: 25px;
+
+
+  .title{
+    float: left;
+    color: $color-accentColor;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .size{
+    float: right;
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "M03PropertyTransaction",
+    "alias": "m03propertytransaction",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\M03PropertyTransaction\\Providers\\M03PropertyTransactionServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
