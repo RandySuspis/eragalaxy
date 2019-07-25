@@ -136,6 +136,23 @@ class PropertyAgentController extends Base\CRUDReactController
         ]);
     }
 
+    public function report(Request $request, $page = 0){
+        self::checkPermissionRead($this->moduleBaseUrl);
+        return view("base::baseCRUDReact/formReport")->with([
+            "show"=>$this->_showColumn(),
+            "moduleBaseUrl"=>$this->moduleBaseUrl,
+            "JS"=>[
+                'mainId'=> "propertyAgentReport",
+                'page'  => $page,
+                'limit' => 10,
+                'show'  => json_encode($this->_showColumn()),
+                'showLabel' => json_encode($this->_showColumn()),
+                'baseUrl'=> "'$this->moduleBaseUrl'",
+                'csrf_token' => "'".csrf_token()."'",
+            ]
+        ]);
+    }
+
     public function apiList(Request $request)
     {
         $sql = $this->_baseSQLForController();

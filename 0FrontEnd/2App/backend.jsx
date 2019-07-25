@@ -10,6 +10,7 @@ import {BaseCrudList, BaseCrudDetail, BaseCrudDelete, BaseCrudCreate, BaseCrudUp
 import DefaultPopUp from "../0Template/Components/00Default/03Popup/00defaultBaseModal.jsx"
 import DefaultToast from "../0Template/Components/00Default/04Toast/00defaultBaseToast.jsx"
 
+import BranchOfficeReport from "../0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx"
 import {PropertyAgentListContainer} from "../0Template/Module/02PropertyAgent/propertyAgentModule.jsx"
 import PrimaryPropertyCreate from "../0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyCreate.jsx"
 import PrimaryPropertyUpdate from "../0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyUpdate.jsx"
@@ -19,6 +20,7 @@ import PrimaryPropertyList from "../0Template/Module/02PropertyAgent/PrimaryProp
 
 import TransactionCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate.jsx"
 import TransactionPrimaryCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx"
+import PropertyAgentReport from "../0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx";
 
 function callContainer(id, formCall){
     var element = document.getElementById(id);
@@ -77,12 +79,16 @@ if ('LOGIN'){
     callContainer("forgotPassword",<ForgotPasswordContainer/>)
 }
 
+if ('BRANCH'){
+    callContainer("branchOfficeReport",<BranchOfficeReport/>)
+}
 
 // Call Property Agent Module
 if ('PROPERTYAGENT') {
     callContainer('propertyAgentList', <PropertyAgentListContainer/>)
     callContainer('propertyAgentCreate', <BaseCrudCreate/>)
     callContainer('propertyAgentUpdate', <BaseCrudUpdate/>)
+    callContainer('propertyAgentReport', <PropertyAgentReport/>)
 }
 
 if ('PRIMARYPROJECT') {

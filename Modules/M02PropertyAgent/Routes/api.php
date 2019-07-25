@@ -22,8 +22,10 @@ Route::group(['namespace' => 'API'], function () {
 
     apiCreatorHelper('agent', 'PropertyAgentAPIController');
     Route::get('agent/getOffice', 'PropertyAgentAPIController@getOfficeData');
+    Route::get('agent/report', 'PropertyAgentAPIController@getReportData');
 
     apiCreatorHelper('branch', 'BranchOfficeAPIController');
+    Route::get('branch/report', 'BranchOfficeAPIController@getReportData');
 
     apiCreatorHelper('primary', 'PrimaryProjectAPIController');
     Route::get('primary/test', 'PrimaryProjectAPIController@indexWithPrimaryLister');

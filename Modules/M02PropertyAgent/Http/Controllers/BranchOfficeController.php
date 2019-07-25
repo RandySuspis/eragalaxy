@@ -2,7 +2,7 @@
 
 namespace Modules\M02PropertyAgent\Http\Controllers;
 
-
+use Illuminate\Http\Request ;
 use Modules\M00Base\Http\Controllers\Base as Base;
 use Modules\M02PropertyAgent\Entities\BranchOffice as BranchOffice;
 use Modules\M02PropertyAgent\Entities\PropertyAgent;
@@ -34,5 +34,22 @@ class BranchOfficeController extends Base\CRUDReactController
         }
 
         return $data;
+    }
+
+    public function report(Request $request, $page = 0){
+        self::checkPermissionRead($this->moduleBaseUrl);
+        return view("base::baseCRUDReact/formReport")->with([
+            "show"=>$this->_showColumn(),
+            "moduleBaseUrl"=>$this->moduleBaseUrl,
+            "JS"=>[
+                'mainId'=> "branchOfficeReport",
+                'page'  => $page,
+                'limit' => 10,
+                'show'  => json_encode($this->_showColumn()),
+                'showLabel' => json_encode($this->_showColumn()),
+                'baseUrl'=> "'$this->moduleBaseUrl'",
+                'csrf_token' => "'".csrf_token()."'",
+            ]
+        ]);
     }
 }

@@ -90,7 +90,7 @@ class PrimaryProjectController extends Base\CRUDReactController
 
     public function report(Request $request, $page = 0){
         self::checkPermissionRead($this->moduleBaseUrl);
-        return view("base::baseCRUDReact/formList")->with([
+        return view("base::baseCRUDReact/formReport")->with([
             "show"=>$this->_showColumn(),
             "moduleBaseUrl"=>$this->moduleBaseUrl,
             "JS"=>[
