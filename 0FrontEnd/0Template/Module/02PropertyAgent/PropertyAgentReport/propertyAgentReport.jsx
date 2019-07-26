@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import request from "../../../Shared/RequestWrapper.jsx";
 import DefaultBaseInfiniteTable from "../../../Components/01Table/00defaultBaseInfiniteTable.jsx";
+import ReactExport from "react-export-excel";
+import GalaxyHelper from "../../../Shared/GalaxyHelper.jsx";
+
+const ExcelFile = ReactExport.ExcelFile;
+const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
+const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
 
 const DefaultHeader = function(props){
     var {columnStructure} = props;
@@ -29,12 +35,26 @@ const DefaultShowData = function(props){
                 <div className="col-xs-3" > {props.item.name} </div>
                 <div className="col-xs-3" > {props.item.office_name} </div>
                 <div className="col-xs-2" > {props.item.transactionCount} </div>
-                <div className="col-xs-3" > {props.item.gross} </div>
+                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.gross)} </div>
             </div>
         </React.Fragment>
 
     )
 
+}
+
+const Download = function (props) {
+    return (
+        <ExcelFile element={<button>Download Data</button>} filename={"Agent"}>
+            <ExcelSheet data={props.props} name="Agent">
+                <ExcelColumn label="No" value="index"/>
+                <ExcelColumn label="Name" value="name"/>
+                <ExcelColumn label="Office Name" value="office_name"/>
+                <ExcelColumn label="Transaksi" value="transactionCount"/>
+                <ExcelColumn label="Gross Komisi" value="gross"/>
+            </ExcelSheet>
+        </ExcelFile>
+    )
 }
 
 
@@ -49,32 +69,6 @@ export default class PropertyAgentReport extends React.Component{
             componentStatus:'ready',
             primary_project_id:1,
             data: [],
-            // data: [{
-            //     office_name: "Abcdef",
-            //     transaction: "10",
-            //     name: "Randy",
-            //     total_commission: "20000000"
-            // },{
-            //     office_name: "aBcdef",
-            //     transaction: "30",
-            //     name: "rAndy",
-            //     total_commission: "40000000"
-            // },{
-            //     office_name: "abCdef",
-            //     transaction: "50",
-            //     name: "raNdy",
-            //     total_commission: "60000000"
-            // },{
-            //     office_name: "abcDef",
-            //     transaction: "70",
-            //     name: "ranDy",
-            //     total_commission: "80000000"
-            // },{
-            //     office_name: "abcdEf",
-            //     transaction: "90",
-            //     name: "randY",
-            //     total_commission: "100000000"
-            // }],
 
             initialValue: {
                 project_name: "",
@@ -110,6 +104,10 @@ export default class PropertyAgentReport extends React.Component{
     render() {
         return (
             <div className="propertyAgentReport">
+                {this.state.data &&
+                <div style={{float:"right", padding:"10px"}}>
+                    <Download props={this.state.data}/>
+                </div>}
                 <DefaultBaseInfiniteTable contentShown={<DefaultShowData  />}
                                           header={<DefaultHeader baseUrl={this.state.baseUrl}/>}
                                           {...this.state} {...this.props}/>

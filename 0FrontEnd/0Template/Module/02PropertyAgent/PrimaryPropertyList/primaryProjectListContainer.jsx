@@ -133,7 +133,6 @@ class DefaultShowData extends Component{
     render(){
         var {columnStructure, item, visible} = this.props;
         var index = 0;
-        console.log(item);
         return (
             <React.Fragment>
             <div className={'col-xs-3 randyRow'}>

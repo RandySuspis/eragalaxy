@@ -25,6 +25,7 @@ $sideMenuObj = [
             [
                 0 => ['title' => 'View','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/agent/list'],
                 1 => ['title' => 'Add','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/agent/create'],
+                2 => ['title' => 'Report','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/agent/report'],
             ]
         ],
     'Property' =>
@@ -32,24 +33,27 @@ $sideMenuObj = [
             [
                 0 => ['title' => 'View','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/primary/list'],
                 1 => ['title' => 'Add','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/primary/create'],
+                2 => ['title' => 'Report','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/primary/report'],
             ]
         ],
     'Komisi' =>
         ['title' => 'Komisi Transaction', 'leftIcon' => 'fa-edit', 'rightIcon' => 'fa-angle-left', 'url' => '#', 'submenus' =>
             [
                 0 => ['title' => 'View','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/transaction/list'],
-                1 => ['title' => 'Add','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/transaction/create'],
+                1 => ['title' => 'Add Primary','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/transaction_primary/create'],
+                2 => ['title' => 'Add','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/transaction/create'],
             ]
         ],
     'Master' =>
         ['title' => 'Master Table', 'leftIcon' => 'fa-edit', 'rightIcon' => 'fa-angle-left', 'url' => '#', 'submenus' =>
             [
                 0 => ['title' => 'Office','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/branch/list'],
-                1 => ['title' => 'LevelAgent','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/levelAgent/list'],
-                2 => ['title' => 'UserAdmin','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/user/list'],
-                3 => ['title' => 'UserRole','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/role/list'],
-                4 => ['title' => 'DefaultSetting','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/default/list'],
-                5 => ['title' => 'Tax','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/tax/list'],
+                1 => ['title' => 'Office Report','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/branch/report'],
+                2 => ['title' => 'LevelAgent','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/levelAgent/list'],
+                3 => ['title' => 'UserAdmin','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/user/list'],
+                4 => ['title' => 'UserRole','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/role/list'],
+                5 => ['title' => 'DefaultSetting','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/default/list'],
+                6 => ['title' => 'Tax','leftIcon' => 'fa-circle-o','rightIcon' => 'fa-angle-left','url' => '/tax/list'],
             ]
         ],
     'Logout' => ['title' => 'Logout', 'leftIcon' => 'fa-share', 'rightIcon' => 'fa-angle-left', 'url' => '#'],

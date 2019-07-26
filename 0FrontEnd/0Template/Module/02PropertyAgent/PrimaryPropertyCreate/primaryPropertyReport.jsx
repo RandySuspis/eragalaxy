@@ -1,21 +1,79 @@
 import React, { Component } from "react";
-import "./index.scss"
-import {ErrorMessage, Form, Formik} from "formik";
-import {FieldAsyncSelect, FieldTextArea, FieldText, FieldNumber} from "../../../Components/03Form/FieldType.jsx";
 import request from "../../../Shared/RequestWrapper.jsx";
+import DefaultBaseInfiniteTable from "../../../Components/01Table/00defaultBaseInfiniteTable.jsx";
+import ReactExport from "react-export-excel";
+import DatePicker from 'react-datepicker'
+import GalaxyHelper from "../../../Shared/GalaxyHelper.jsx";
 
-export default class PrimaryPropertyReport extends React.Component{
+const ExcelFile = ReactExport.ExcelFile;
+const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
+const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
+
+const DefaultHeader = function(props){
+    var {columnStructure} = props;
+    return (
+        <div className={'header'}>
+
+            <div className="row hidden-xs" >
+                <div className="col-xs-1" > No </div>
+                <div className="col-xs-2" > Primary </div>
+                <div className="col-xs-3" > Total Gross </div>
+                <div className="col-xs-3" > Total Transaksi </div>
+                <div className="col-xs-3" > Total </div>
+            </div>
+        </div>
+    )
+}
+
+const DefaultShowData = function(props){
+
+    // var {columnStructure, item, visible} = this.props;
+    // var index = 0;
+    return(
+        <React.Fragment>
+            <div className="randyRow">
+                <div className="col-xs-1" > {props.index} </div>
+                <div className="col-xs-2" > {props.item.name} </div>
+                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.total_gross)} </div>
+                <div className="col-xs-3" > {props.item.transaction_count} </div>
+                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.total)} </div>
+            </div>
+        </React.Fragment>
+
+    )
+
+}
+
+const Download = function (props) {
+    return (
+        <ExcelFile element={<button>Download Data</button>} filename={"Primary"}>
+            <ExcelSheet data={props.props} name="Primary">
+                <ExcelColumn label="No" value="index"/>
+                <ExcelColumn label="Primary" value="name"/>
+                <ExcelColumn label="Total Gross" value="total_gross"/>
+                <ExcelColumn label="Total Transaksi" value="transaction_count"/>
+                <ExcelColumn label="Total" value="total"/>
+            </ExcelSheet>
+        </ExcelFile>
+    )
+}
+
+
+export default class BranchOfficeReport extends React.Component{
     constructor() {
         super();
         var ajaxCall = "/"+baseUrl+"/detail/ajax";
+        var dateNow = this.formatDate(new Date());
+        var dateBefore = this.formatDateBefore(new Date());
 
         this.state = {
-            baseUrl: "/api/primary/view/1",
+            baseUrl: "/api/primary/report",
             ajaxCall:ajaxCall,
             componentStatus:'ready',
             primary_project_id:1,
-            primaryData: [],
-            coorData: [],
+            data: [],
+            startDate: dateBefore,
+            endDate: dateNow,
 
             initialValue: {
                 project_name: "",
@@ -37,108 +95,98 @@ export default class PrimaryPropertyReport extends React.Component{
                 request({
                     url:    this.state.baseUrl,
                     method: 'GET',
+                    params:{
+                        startDate: this.state.startDate,
+                        endDate: this.state.endDate,
+                    }
                 }).then(response => {
                     this.setState({
                         componentStatus: 'ready',
-                        primaryData: response.data.data.data,
-                        coorData: response.data.data.coordinators
+                        data: response.data.data.data,
                     });
                 })
             }
         }
     }
 
-    componentWillMount() {
-        var createAjaxCall = "/"+baseUrl+"/create/";
-        var submitAjaxCall = this.props.submitAjaxCall?this.props.submitAjaxCall:createAjaxCall;
-        this.setState({submitAjaxCall:submitAjaxCall,})
+    formatDateBefore = (date) => {
+        var day = date.getDate();
+        if (day < 10) {
+            day = "0" + day;
+        }
+        var month = date.getMonth();
+        if (month < 10) {
+            month = "0" + month;
+        }
+        var year = date.getFullYear();
+        return year + "-" + month + "-" + day;
     }
 
-    // FORM RELATED
-    fieldValidation = (values) => {
-        let errors = {};
-        if (!values.project_name) { errors.project_name = "Project is required" }
-        if (!values.agent_lister_id) { errors.agent_lister_id= "Agent is required" }
-
-        return errors;
+    formatDate = (date) => {
+        var day = date.getDate();
+        if (day < 10) {
+            day = "0" + day;
+        }
+        var month = date.getMonth() + 1;
+        if (month < 10) {
+            month = "0" + month;
+        }
+        var year = date.getFullYear();
+        return year + "-" + month + "-" + day;
     }
 
-    submitForm  = (values, actions) => {
-        request({
-            url: this.state.submitAjaxCall,
-            method: 'post',
-            params:   values
-        }).then(response => {
-            console.log(response);
-            if (response.status === 200 && response.statusText === "OK"){
-                // window.location.href = "/"+this.state.baseUrl;
-            }else{
+    onStartDatePick = (date, event) => {
+        var temp = this.formatDate(date)
+        this.state.startDate = temp;
+        this.setState({startDate:temp})
+        console.log(this.state.endDate)
+        {this.state.endDate &&
+        this.loadData()}
+    }
 
-            }
-        })
+    onEndDatePick = (date, event) => {
+        var temp = this.formatDate(date)
+        this.state.endDate = temp;
+        this.setState({endDate:temp})
+        {this.state.startDate &&
+        this.loadData()}
     }
 
     // RENDER
     render() {
         return (
-            <div>
-                <div className="row">
-                    <div className="col-md-6">
-                        Nama Project
-                    </div>
-                    <div className="col-md-6">
-                        {this.state.primaryData.project_name}
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        Note
-                    </div>
-                    <div className="col-md-6">
-                        {this.state.primaryData.note}
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        Pelisting
-                    </div>
-                    <div className="col-md-6">
-                        {this.state.primaryData.name}
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6">
-                        Komisi Pelisting
-                    </div>
-                    <div className="col-md-6">
-                        {this.state.primaryData.percent_listing_commission} %
-                    </div>
-                </div>
+            <div className="primaryPropertyReport">
+                <div style={{padding:"10px"}}>
+                    <DatePicker style={{zIndex:"10"}}
+                        // selected={date}
+                                dateFormat="yyyy-MM-dd"
+                                placeholderText="start-date"
+                                className="form-control"
+                                value={this.state.startDate}
+                                name={name}
+                                autoComplete="off"
+                                onChange={this.onStartDatePick}
 
-                {this.state.coorData &&
+                    />
+                    <DatePicker style={{zIndex:"10"}}
+                        // selected={date}
+                                dateFormat="yyyy-MM-dd"
+                                placeholderText="end-date"
+                                className="form-control"
+                                value={this.state.endDate}
+                                name={name}
+                                autoComplete="off"
+                                onChange={this.onEndDatePick}
 
-                    this.state.coorData.map((data, index) => (
-                        <div>
-                            <h3>Koordinator {index+1}</h3>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    Nama
-                                </div>
-                                <div className="col-md-6">
-                                    {data.agent_name}
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-6">
-                                    Komisi
-                                </div>
-                                <div className="col-md-6">
-                                    {data.percent_commission} %
-                                </div>
-                            </div>
-                        </div>
-                    ))
-                }
+                    />
+                    {this.state.data &&
+                    <div style={{float:"right", padding:"10px"}}>
+                        <Download props={this.state.data}/>
+                    </div>}
+                </div>
+                <DefaultBaseInfiniteTable contentShown={<DefaultShowData  />}
+                                          header={<DefaultHeader baseUrl={this.state.baseUrl}/>}
+                                          {...this.state} {...this.props}/>
             </div>
         )
     }

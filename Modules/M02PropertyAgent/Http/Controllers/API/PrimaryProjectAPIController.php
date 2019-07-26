@@ -72,4 +72,58 @@ class PrimaryProjectAPIController extends Base\CRUDAPIController
         return $this->composeSuccessJSON($json);
     }
 
+    public function getReportData(Request $request)
+    {
+        $startDate = "";
+        $endDate = "";
+        if ($request->has('startDate')) $startDate = $request->get('startDate');
+        if ($request->has('endDate')) $endDate = $request->get('endDate');
+        if ($endDate!=""){
+            $temp = str_replace('-','/', $endDate);
+            $endDate = date('Y-m-d',strtotime($temp . "+1 days"));
+        }
+        $primaryData = DB::table("$this->tableName as b")
+            ->select('b.id','b.project_name as name')->get();
+        $columnType = DB::select("describe $this->tableName");
+        $selectStr = [];
+        for ($i=0; $i<count($columnType); $i++){
+            if (!in_array($columnType[$i]->Field, $this->hideSelect)){
+                $selectStr[] = $columnType[$i]->Field;
+            }
+        }
+        for ($i=0; $i<count($primaryData); $i++){
+            $primaryData[$i]->index = $i+1;
+            $theId = $primaryData[$i]->id;
+            if($startDate!="" && $endDate!="")
+                $transaction = DB::table('transaction_property')
+                    ->select(DB::raw('SUM(transaction_property.property_value) as total'),DB::raw('SUM(transaction_property.gross_commission) as gross'),DB::raw('COUNT(transaction_property.gross_commission) as transactionCount'))
+                    ->where('transaction_property.property_id','=',$theId)
+                    ->whereBetween('transaction_property.created_at', [$startDate,$endDate])
+                    ->get()->first();
+            else
+                $transaction = DB::table('transaction_property')
+                    ->select(DB::raw('SUM(transaction_property.property_value) as total'),DB::raw('SUM(transaction_property.gross_commission) as gross'),DB::raw('COUNT(transaction_property.gross_commission) as transactionCount'))
+                    ->where('transaction_property.property_id','=',$theId)
+                    ->get()->first();
+            if($transaction->gross == null) {
+                $primaryData[$i]->total_gross = 0;
+            } else {
+                $primaryData[$i]->total_gross = $transaction->gross;
+            }
+            $primaryData[$i]->transaction_count = $transaction->transactionCount;
+            if($transaction->total == null) {
+                $primaryData[$i]->total = 0;
+            } else {
+                $primaryData[$i]->total = $transaction->total;
+            }
+        }
+
+        $result = $primaryData;
+        $json = [
+            "data"=>$result,
+            "show"=>DB::getSchemaBuilder()->getColumnListing($this->tableName),
+        ];
+        return $this->composeSuccessJSON($json);
+    }
+
 }

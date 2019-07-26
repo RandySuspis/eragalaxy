@@ -176,6 +176,7 @@ module.exports = (env, argv) => {
                 "~Assets": path.resolve(__dirname, '1Assets')
             }
         },
+        node: { fs: 'empty' },
         devtool: 'source-map'
     }
 }

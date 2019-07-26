@@ -29,8 +29,17 @@ class BranchOfficeAPIController extends Base\CRUDAPIController
         return redirect('branch/list');
     }
 
-    public function getReportData()
+    public function getReportData(Request $request)
     {
+        $startDate = "";
+        $endDate = "";
+        if ($request->has('startDate')) $startDate = $request->get('startDate');
+        if ($request->has('endDate')) $endDate = $request->get('endDate');
+        if ($endDate!=""){
+            $temp = str_replace('-','/', $endDate);
+            $endDate = date('Y-m-d',strtotime($temp . "+1 days"));
+        }
+
         $branchData = DB::table("$this->tableName as b")
             ->select('b.id','b.name as office_name')->get();
         $columnType = DB::select("describe $this->tableName");
@@ -41,20 +50,60 @@ class BranchOfficeAPIController extends Base\CRUDAPIController
             }
         }
         for ($i=0; $i<count($branchData); $i++){
+            $branchData[$i]->index = $i+1;
             $theId = $branchData[$i]->id;
-            $gross = DB::table('transaction_property')
-                ->select(DB::raw('SUM(transaction_property.gross_commission) as gross'))
-                ->where('transaction_property.office_id','=',$theId)
-                ->first();
+            if($startDate!="" && $endDate!="")
+                $gross = DB::table('transaction_property')
+                    ->select(DB::raw('SUM(transaction_property.gross_commission) as gross'))
+                    ->where('transaction_property.office_id','=',$theId)
+                    ->whereBetween('transaction_property.created_at', [$startDate,$endDate])
+                    ->first();
+            else
+                $gross = DB::table('transaction_property')
+                    ->select(DB::raw('SUM(transaction_property.gross_commission) as gross'))
+                    ->where('transaction_property.office_id','=',$theId)
+                    ->first();
             if($gross->gross == null) {
-                $branchData[$i]->grossTotal = 0;
+                $branchData[$i]->total_gross = 0;
+                $branchData[$i]->top_agent = "-";
+                $branchData[$i]->total_commission = 0;
             } else {
-                $branchData[$i]->grossTotal = $gross->gross;
+                $indexTop=0;
+                $max=0;
+                $branchData[$i]->total_gross = $gross->gross;
+                $agentData = DB::table("property_agent as a")
+                    ->select('a.id','a.name')
+                    ->where('a.office_id','=',$theId)->get();
+                for ($j=0; $j<count($agentData); $j++){
+                    $theId = $agentData[$j]->id;
+                    if($startDate!="" && $endDate!="")
+                        $gross = DB::table('agent_commission')
+                            ->select(DB::raw('SUM(agent_commission.commission_gross) as gross'))
+                            ->where('agent_commission.agent_id','=',$theId)
+                            ->whereBetween('agent_commission.created_at', [$startDate,$endDate])
+                            ->first();
+                    else
+                        $gross = DB::table('agent_commission')
+                            ->select(DB::raw('SUM(agent_commission.commission_gross) as gross'))
+                            ->where('agent_commission.agent_id','=',$theId)
+                            ->first();
+                    if($gross->gross == null) {
+                        $agentData[$j]->gross = 0;
+                    } else {
+                        $agentData[$j]->gross = $gross->gross;
+                        if($gross->gross>$max){
+                            $max=$gross->gross;
+                            $indexTop=$j;
+                        }
+                    }
+                }
+                $branchData[$i]->top_agent = $agentData[$indexTop]->name;
+                $branchData[$i]->total_commission = $agentData[$indexTop]->gross;
             }
         }
-        $agentData = DB::table("$this->tableName as b")
-            ->leftJoin('property_agent as a','a.office_id','b.id')
-            ->select('a.id','a.name','b.name as office_name')->get();
+        $agentData = DB::table("property_agent as a")
+            ->select('a.id','a.name')
+            ->where('a.office_id','=',$theId)->get();
         for ($i=0; $i<count($agentData); $i++){
             $theId = $agentData[$i]->id;
             $transaction = DB::table('agent_commission')

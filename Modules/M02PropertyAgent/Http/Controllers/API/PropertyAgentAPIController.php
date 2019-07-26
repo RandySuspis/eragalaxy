@@ -49,6 +49,7 @@ class PropertyAgentAPIController extends Base\CRUDAPIController
             }
         }
         for ($i=0; $i<count($agentData); $i++){
+            $agentData[$i]->index = $i+1;
             $theId = $agentData[$i]->id;
             $transaction = DB::table('agent_commission')
                 ->select('agent_commission.*')
