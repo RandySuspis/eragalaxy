@@ -29,6 +29,7 @@ Route::middleware(["auth"])->group(function(){
 Route::middleware(["auth"])->group(function(){
     urlCreatorHelper("branch", "BranchOfficeController");
     urlCreatorHelper("primary", "PrimaryProjectController");
+    Route::get('primary/report/{id}', 'PrimaryProjectController@viewReportDetail');
     urlCreatorHelper("secondary", "SecondaryProjectController");
 
     urlCreatorHelper("transactionprimary", "TransactionPrimaryController");

@@ -105,6 +105,28 @@ class PrimaryProjectController extends Base\CRUDReactController
         ]);
     }
 
+    public function viewReportDetail(Request $request, $theId){
+        self::checkPermissionRead($this->moduleBaseUrl);
+        $data = DB::table($this->tableName)->find($theId);
+        if (!$data) {
+            abort(404);
+        }
+        return view("base::baseCRUDReact/formReport")->with([
+            "show"=>$this->_showColumn(),
+            "moduleBaseUrl"=>$this->moduleBaseUrl,
+            "JS"=>[
+                'mainId'=> "primaryPropertyReportDetail",
+                'page' => 0,
+                'limit' => 10,
+                'show'  => json_encode($this->_showColumn()),
+                'showLabel' => json_encode($this->_showColumn()),
+                'baseUrl'=> "'$this->moduleBaseUrl'",
+                'csrf_token' => "'".csrf_token()."'",
+                'primary_project_id' => $theId,
+            ]
+        ]);
+    }
+
     public function create()
     {
         // Data ini : placeholder, Error & Validation, Label, class, options, masking, ispassword, isdisabled

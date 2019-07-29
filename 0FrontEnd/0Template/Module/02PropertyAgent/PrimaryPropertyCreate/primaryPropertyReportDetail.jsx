@@ -15,11 +15,10 @@ const DefaultHeader = function(props){
         <div className={'header'}>
 
             <div className="row hidden-xs" >
-                <div className="col-xs-1" > No </div>
-                <div className="col-xs-2" > Primary </div>
-                <div className="col-xs-3" > Total Gross </div>
-                <div className="col-xs-3" > Total Transaksi </div>
-                <div className="col-xs-3" > Total </div>
+                <div className="col-xs-3" > Date </div>
+                <div className="col-xs-3" > Agent Name </div>
+                <div className="col-xs-3" > Komisi </div>
+                <div className="col-xs-3" > Nilai Transaksi </div>
             </div>
         </div>
     )
@@ -32,11 +31,10 @@ const DefaultShowData = function(props){
     return(
         <React.Fragment>
             <div className="randyRow">
-                <div className="col-xs-1" > {props.index} </div>
-                <div className="col-xs-2" > {props.item.name} </div>
-                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.total_gross)} </div>
-                <div className="col-xs-3" > {props.item.transaction_count} </div>
-                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.total)} </div>
+                <div className="col-xs-3" > {props.item.date} </div>
+                <div className="col-xs-3" > {props.item.agent_name} </div>
+                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.gross_commission)} </div>
+                <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.property_value)} </div>
             </div>
         </React.Fragment>
 
@@ -59,7 +57,7 @@ const Download = function (props) {
 }
 
 
-export default class primaryPropertyReport extends React.Component{
+export default class primaryPropertyReportDetail extends React.Component{
     constructor() {
         super();
         var ajaxCall = "/"+baseUrl+"/detail/ajax";
@@ -67,10 +65,11 @@ export default class primaryPropertyReport extends React.Component{
         var dateBefore = this.formatDateBefore(new Date());
 
         this.state = {
-            baseUrl: "/api/primary/report",
+            baseUrl: "/api/primary/report/detail",
             ajaxCall:ajaxCall,
             componentStatus:'ready',
-            primary_project_id:1,
+            primary_project_id:primary_project_id,
+            primaryData: [],
             data: [],
             startDate: dateBefore,
             endDate: dateNow,
@@ -98,11 +97,13 @@ export default class primaryPropertyReport extends React.Component{
                     params:{
                         startDate: this.state.startDate,
                         endDate: this.state.endDate,
+                        primary_project_id: this.state.primary_project_id,
                     }
                 }).then(response => {
                     this.setState({
                         componentStatus: 'ready',
-                        data: response.data.data.data,
+                        primaryData: response.data.data.data,
+                        data: response.data.data.data.transaction,
                     });
                 })
             }
@@ -156,33 +157,70 @@ export default class primaryPropertyReport extends React.Component{
     render() {
         return (
             <div className="primaryPropertyReport">
+                {this.state.data &&
+                <div style={{float:"right", padding:"10px"}}>
+                    <Download props={this.state.data}/>
+                </div>}
                 <div style={{padding:"10px"}}>
-                    <DatePicker style={{zIndex:"10"}}
-                        // selected={date}
-                                dateFormat="yyyy-MM-dd"
-                                placeholderText="start-date"
-                                className="form-control"
-                                value={this.state.startDate}
-                                name={name}
-                                autoComplete="off"
-                                onChange={this.onStartDatePick}
+                    <div className={"col-md-6"}>
+                        <label className={"col-md-6"}>
+                            Project Name
+                        </label>
+                        <div className={"col-md-6"}>
+                            {this.state.primaryData.project_name}
+                        </div>
+                    </div>
+                    <div className={"col-md-12"}>
+                        <label className={"col-md-3"}>
+                            Date
+                        </label>
+                        <DatePicker style={{zIndex:"10"}}
+                            // selected={date}
+                                    dateFormat="yyyy-MM-dd"
+                                    placeholderText="start-date"
+                                    className="form-control"
+                                    value={this.state.startDate}
+                                    name={name}
+                                    autoComplete="off"
+                                    onChange={this.onStartDatePick}
 
-                    />
-                    <DatePicker style={{zIndex:"10"}}
-                        // selected={date}
-                                dateFormat="yyyy-MM-dd"
-                                placeholderText="end-date"
-                                className="form-control"
-                                value={this.state.endDate}
-                                name={name}
-                                autoComplete="off"
-                                onChange={this.onEndDatePick}
+                        />
+                        <DatePicker style={{zIndex:"10"}}
+                            // selected={date}
+                                    dateFormat="yyyy-MM-dd"
+                                    placeholderText="end-date"
+                                    className="form-control"
+                                    value={this.state.endDate}
+                                    name={name}
+                                    autoComplete="off"
+                                    onChange={this.onEndDatePick}
 
-                    />
-                    {this.state.data &&
-                    <div style={{float:"right", padding:"10px"}}>
-                        <Download props={this.state.data}/>
-                    </div>}
+                        />
+                    </div>
+                    <div className={"col-md-12"}>
+                        <label className={"col-md-3"}>
+                            Lister Name
+                        </label>
+                        <div className={"col-md-9"}>
+                            {this.state.primaryData.lister_name}
+                        </div>
+                    </div>
+                    <div className={"col-md-12"}>
+                        <label className={"col-md-3"}>
+                            Koordinator Name
+                        </label>
+                        <div className={"col-md-9"}>
+                            {this.state.primaryData.koordinator &&
+                            this.state.primaryData.koordinator.map( data => {
+                                return(
+                                    <div>
+                                        {data.agent_name}
+                                        <br />
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
                 </div>
                 <DefaultBaseInfiniteTable contentShown={<DefaultShowData  />}
                                           header={<DefaultHeader baseUrl={this.state.baseUrl}/>}

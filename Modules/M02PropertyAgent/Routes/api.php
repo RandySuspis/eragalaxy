@@ -30,6 +30,7 @@ Route::group(['namespace' => 'API'], function () {
     apiCreatorHelper('primary', 'PrimaryProjectAPIController');
     Route::get('primary/test', 'PrimaryProjectAPIController@indexWithPrimaryLister');
     Route::get('primary/report', 'PrimaryProjectAPIController@getReportData');
+    Route::get('primary/report/detail', 'PrimaryProjectAPIController@getReportDetail');
 
     apiCreatorHelper('secondary', 'SecondaryProjectAPIController');
 

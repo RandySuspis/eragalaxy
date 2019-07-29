@@ -16,6 +16,7 @@ import PrimaryPropertyCreate from "../0Template/Module/02PropertyAgent/PrimaryPr
 import PrimaryPropertyUpdate from "../0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyUpdate.jsx"
 import PrimaryPropertyReport from "../0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx"
 import PrimaryPropertyList from "../0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx"
+import PrimaryPropertyReportDetail from "../0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx"
 // import TransactionPrimaryCreate from "../0Template/Module/02PropertyAgent/TransactionPrimaryCreate/transactionPrimaryCreate.jsx"
 
 import TransactionCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate.jsx"
@@ -96,6 +97,7 @@ if ('PRIMARYPROJECT') {
     callContainer('primaryPropertyCreate', <PrimaryPropertyCreate/>)
     callContainer('primaryPropertyUpdate', <PrimaryPropertyUpdate/>)
     callContainer('primaryPropertyReport', <PrimaryPropertyReport/>)
+    callContainer('primaryPropertyReportDetail', <PrimaryPropertyReportDetail/>)
 }
 
 if ('TRANSACTIONPRIMARY'){

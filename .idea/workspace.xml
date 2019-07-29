@@ -2,205 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e639509-3393-489e-8bd2-82f2ba8e08b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/code-frame/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/code-frame/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/code-frame/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/code-frame/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/code-frame/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/code-frame/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/lib/transformation/file/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/lib/transformation/file/file.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/generator/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-call-delegate/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-define-map/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-hoist-variables/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-member-expression-to-functions/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-member-expression-to-functions/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-member-expression-to-functions/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-member-expression-to-functions/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-member-expression-to-functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-member-expression-to-functions/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-module-transforms/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-regex/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-replace-supers/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helper-split-export-declaration/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/lib/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/lib/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/helpers/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-proposal-object-rest-spread/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-proposal-object-rest-spread/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-block-scoping/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-block-scoping/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-classes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-classes/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-object-super/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-object-super/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-object-super/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/plugin-transform-object-super/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/preset-env/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/template/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/definitions/es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/definitions/es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/definitions/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/definitions/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/index.js.flow" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/index.js.flow" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/validators/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/lib/validators/validate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/scripts/utils/stringifyValidator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/node_modules/@babel/types/scripts/utils/stringifyValidator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/@babel/traverse/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/bin/.semver.js.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/core-js-compat/node_modules/semver/semver.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/fstream/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/fstream/lib/writer.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/fstream/lib/writer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/fstream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/fstream/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_baseClone.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_baseClone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_baseMerge.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_baseMerge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_createRound.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_createRound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_safeGet.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/_safeGet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/core.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/debounce.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/debounce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/lodash.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/lodash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/lodash.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/lodash.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/lodash/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/mixin-deep/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/mixin-deep/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/mixin-deep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/mixin-deep/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/dist/es/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/dist/es/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/src/index.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/react-dropzone/src/index.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/regenerator-transform/lib/visit.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/regenerator-transform/lib/visit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/regenerator-transform/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/regenerator-transform/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/regenerator-transform/src/visit.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/regenerator-transform/src/visit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/set-value/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/set-value/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/set-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/set-value/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/tar/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/tar/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/tar/lib/parse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/tar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/tar/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/set-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/set-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/set-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/node_modules/set-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/union-value/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/declarations/WebpackOptions.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/declarations/WebpackOptions.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Compilation.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Compilation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Compiler.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Compiler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/HashedModuleIdsPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/HashedModuleIdsPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/JavascriptModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/JavascriptModulesPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/ModuleFilenameHelpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/ModuleFilenameHelpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/NamedModulesPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/NamedModulesPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/NormalModule.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/NormalModule.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/NormalModuleFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/NormalModuleFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/OptionsDefaulter.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/OptionsDefaulter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/ResolverFactory.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/ResolverFactory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/SourceMapDevToolPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/SourceMapDevToolPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Template.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/Template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/TemplatedPathPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/TemplatedPathPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/WebpackOptionsApply.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/WebpackOptionsApply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/WebpackOptionsDefaulter.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/WebpackOptionsDefaulter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/debug/ProfilingPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/debug/ProfilingPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/node/NodeEnvironmentPlugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/node/NodeEnvironmentPlugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/util/createHash.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/util/createHash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/util/objectToMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/util/objectToMap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/wasm/WebAssemblyGenerator.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/wasm/WebAssemblyGenerator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/lib/webpack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/dist/acorn.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/dist/acorn.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/dist/acorn.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/dist/acorn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/dist/acorn.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/dist/acorn.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/node_modules/acorn/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/schemas/WebpackOptions.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/node_modules/webpack/schemas/WebpackOptions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/M00Base/Resources/views/layout/backendA.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M00Base/Resources/views/layout/backendA.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/BranchOfficeAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/BranchOfficeAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -214,10 +23,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
+            <state relative-caret-position="146">
+              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -226,19 +35,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/M01Login/Database/Seeders/M01LoginDatabaseSeeder.php">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="37" column="92" selection-start-line="37" selection-start-column="92" selection-end-line="37" selection-end-column="92" />
+            <state relative-caret-position="41">
+              <caret line="172" column="62" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -247,22 +47,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/00BaseCrud/BaseCrudList/BaseCrudList.jsx">
+        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Database/Migrations/2019_04_01_100913_create_primary_project_and_secondary_project.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-444">
-              <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/TransactionPrimaryCreate/transactionPrimaryCreate.jsx">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate1.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="123" column="51" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
+            <state relative-caret-position="181">
+              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-873">
+              <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -271,10 +82,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Shared/GalaxyHelper.jsx">
+        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="315">
+              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/2App/backend.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#100#123#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -282,46 +115,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="222">
+              <caret line="155" column="62" selection-start-line="155" selection-start-column="62" selection-end-line="155" selection-end-column="62" />
               <folding>
                 <element signature="e#64#92#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
-              <folding>
-                <element signature="e#1#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/BranchOfficeAPIController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="87" column="75" selection-start-line="87" selection-start-column="75" selection-end-line="87" selection-end-column="75" />
-              <folding>
-                <element signature="e#66#116#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -331,8 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/login/socialmedia</find>
-      <find>value=&quot;LOGIN&quot;</find>
       <find>localhost:8080</find>
       <find>js</find>
       <find>abcd</find>
@@ -361,6 +156,8 @@
       <find>headercolumn</find>
       <find>resolve:</find>
       <find>format</find>
+      <find>this.state</find>
+      <find>this.state.form1</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Modules/M02PropertyAgent/Routes</dir>
@@ -373,9 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Modules/M01Login/Resources/views/register_step_1.blade.php" />
-        <option value="$PROJECT_DIR$/Modules/M01Login/Resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/0FrontEnd/2App/baseTheme.scss" />
         <option value="$PROJECT_DIR$/0FrontEnd/2App/frontend.jsx" />
         <option value="$PROJECT_DIR$/0FrontEnd/2App/frontend.scss" />
         <option value="$PROJECT_DIR$/0FrontEnd/2App/backend.scss" />
@@ -388,7 +182,6 @@
         <option value="$PROJECT_DIR$/config/auth.php" />
         <option value="$PROJECT_DIR$/Modules/M01Login/Entities/MemberAuth.php" />
         <option value="$PROJECT_DIR$/Helper/JWTToken.php" />
-        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" />
         <option value="$PROJECT_DIR$/Modules/M01Login/Entities/Member.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
         <option value="$PROJECT_DIR$/Modules/M01Login/Http/Controllers/LoginController.php" />
@@ -411,19 +204,23 @@
         <option value="$PROJECT_DIR$/Modules/M00Base/Resources/views/baseCRUDReact/formReport.blade.php" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/BranchOfficeController.php" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/index.scss" />
-        <option value="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php" />
         <option value="$PROJECT_DIR$/0FrontEnd/webpack.config.js" />
-        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" />
-        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php" />
-        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" />
         <option value="$PROJECT_DIR$/Modules/M00Base/Resources/views/layout/backendA.blade.php" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/BranchOfficeAPIController.php" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx" />
-        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx" />
+        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" />
+        <option value="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" />
+        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" />
+        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" />
+        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx" />
+        <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php" />
       </list>
     </option>
   </component>
@@ -535,7 +332,7 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -652,6 +449,12 @@
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="0FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="2App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -704,6 +507,30 @@
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -776,31 +603,15 @@
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="API" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -808,6 +619,27 @@
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
               <item name="Routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -864,7 +696,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563178303698</updated>
       <workItem from="1563178305084" duration="12374000" />
-      <workItem from="1563266032745" duration="91340000" />
+      <workItem from="1563266032745" duration="103371000" />
     </task>
     <task id="LOCAL-00001" summary="add agent report and office report [wip]">
       <created>1564048649736</created>
@@ -873,14 +705,21 @@
       <option name="project" value="LOCAL" />
       <updated>1564048649736</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add office report and primary report">
+      <created>1564135819902</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564135819902</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103714000" />
+    <option name="totallyTimeSpent" value="115745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
@@ -898,7 +737,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.329927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -911,76 +750,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
     <MESSAGE value="add agent report and office report [wip]" />
-    <option name="LAST_COMMIT_MESSAGE" value="add agent report and office report [wip]" />
+    <MESSAGE value="add office report and primary report" />
+    <option name="LAST_COMMIT_MESSAGE" value="add office report and primary report" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/SentinelAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="42" lean-forward="true" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/FrontEnd/ListDetailController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="647" column="13" selection-start-line="647" selection-start-column="13" selection-end-line="647" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionPrimaryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="57" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="103" column="57" selection-start-line="103" selection-start-column="57" selection-end-line="103" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Helper/GalaxyHelper.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1015,13 +788,6 @@
     <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/APIController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Helper/RouteHelper.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/propertyAgentModule.jsx">
@@ -1089,31 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/2App/backend.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-906">
-          <caret line="22" column="112" selection-start-line="22" selection-start-column="112" selection-end-line="22" selection-end-column="112" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#100#123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
           <caret line="144" column="47" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/CRUDReactController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="68" column="20" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding>
-            <element signature="e#57#90#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1151,30 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="96" column="43" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
-          <folding>
-            <element signature="e#61#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/node_modules/react-datepicker/es/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
@@ -1196,16 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#64#92#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,16 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="36" column="64" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
@@ -1273,10 +974,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Helper/RandyHelper.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Helper/RouteHelper.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/CRUDReactController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4058">
+          <caret line="460" selection-start-line="460" selection-end-line="460" />
+          <folding>
+            <element signature="e#57#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
+          <folding>
+            <element signature="e#61#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="38" column="92" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
+        <state relative-caret-position="-1705">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/branchOfficeReport.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1518">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -1285,11 +1036,109 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+        <state relative-caret-position="1610">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
           <folding>
             <element signature="e#1#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1875">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/2App/backend.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#100#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="155" column="62" selection-start-line="155" selection-start-column="62" selection-end-line="155" selection-end-column="62" />
+          <folding>
+            <element signature="e#64#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-873">
+          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate1.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="172" column="62" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Database/Migrations/2019_04_01_100913_create_primary_project_and_secondary_project.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
         </state>
       </provider>
     </entry>
