@@ -353,7 +353,10 @@ class PropertyAgentController extends Base\CRUDReactController
         $currentCommission = $request->currentCommission ? $request->currentCommission : "5000000000";
         $propertyPrice = str_replace(".",  "", $request->propertyValue."");
         $percentCommission = str_replace("%", "", $request->percentCommission."");
-        $result = $this->calculateTransactionData($propertyPrice, $percentCommission, 0, $propertyId, $agentId);
+        $biayaLain1 = !empty($request->biaya_lain_1) ? str_replace(".",  "", $request->biaya_lain_1.""):0;
+        $biayaLain2 = !empty($request->biaya_lain_2) ? str_replace(".",  "", $request->biaya_lain_2.""):0;
+        $biayaLain3 = !empty($request->biaya_lain_3) ? str_replace(".",  "", $request->biaya_lain_3.""):0;
+        $result = $this->calculateTransactionData($biayaLain1, $biayaLain2, $biayaLain3, $propertyPrice, $percentCommission, 0, $propertyId, $agentId);
         return response()->json($result, 200);
     }
 
@@ -405,10 +408,14 @@ class PropertyAgentController extends Base\CRUDReactController
         $agentId = $form1->agent_id;
         $propertyPrice = str_replace(".", "", $form1->property_value."");
         $percentCommission = str_replace("%", "", $form1->percent_commission."");
+        $propertyNote = isset($form1->property_note)?$form1->property_note:"No Description";
         $subsidiPercent = isset($form2->subsd)?(int)$form2->subsd:0;
         $propertyId = isset($form1->property_id)?(int)$form1->property_id:null;
+        $biaya_lain_1 = !empty($form1->biaya_lain_1)?str_replace(".", "", $form1->biaya_lain_1.""):0;
+        $biaya_lain_2 = !empty($form1->biaya_lain_2)?str_replace(".", "", $form1->biaya_lain_2.""):0;
+        $biaya_lain_3 = !empty($form2->biaya_lain_3)?str_replace(".", "", $form2->biaya_lain_3.""):0;
 
-        $result = $this->calculateTransactionData($propertyPrice, $percentCommission, $subsidiPercent, $propertyId, $agentId);
+        $result = $this->calculateTransactionData($biaya_lain_1, $biaya_lain_2, $biaya_lain_3, $propertyPrice, $percentCommission, $subsidiPercent, $propertyId, $agentId);
         $commissionData= $result["commissionData"];
         $bonusData= $result["bonusData"];
 
@@ -424,7 +431,6 @@ class PropertyAgentController extends Base\CRUDReactController
             $isPrimary = true;
         }
         $invoiceId = $this->createInvoiceNumber($agentId, date("dmy"), count($totalTransactionToday), $isPrimary);
-
         if ($form2->langsungCair == 1) {
             $transactionId = TransactionProperty::insertGetId([
                 "invoice_id"=> $invoiceId,
@@ -450,6 +456,10 @@ class PropertyAgentController extends Base\CRUDReactController
                 "office_subsidy_percent"=> $commissionData['subsidi'],
                 "office_subsidy_number"=> $commissionData['subsidi_number'],
                 "office_end_commission"=> $commissionData['total_office_wo_bonus'],
+                "property_note"=> $propertyNote,
+                "biaya_lain_1"=> $biaya_lain_1,
+                "biaya_lain_2"=> $biaya_lain_2,
+                "biaya_lain_3"=> $biaya_lain_3,
                 "created_at" => Carbon::now()->toDateTimeString(),
                 "updated_at" => Carbon::now()->toDateTimeString()
             ]);
@@ -500,7 +510,6 @@ class PropertyAgentController extends Base\CRUDReactController
                 "tax_number"=> $commissionData['ppn_number'],
                 "type"=> "PPN",
             ]);
-
         }else{
             $termin1 = $form2->termin_1;
             $termin1Percent = $termin1->percent;
@@ -685,7 +694,7 @@ class PropertyAgentController extends Base\CRUDReactController
         return "success";
     }
 
-    protected function calculateTransactionData($propertyPrice, $propertyPercentCommission,  $subsidi, $propertyId, $agentId){
+    protected function calculateTransactionData($biayaLain1, $biayaLain2, $biayaLain3, $propertyPrice, $propertyPercentCommission,  $subsidi, $propertyId, $agentId){
         /*
         * 1. Form 1
         *  a. Start to write the percent commission (Commission Gross)
@@ -722,10 +731,10 @@ class PropertyAgentController extends Base\CRUDReactController
         $commissionData["mg_fee_tax"] = $mg_fee_tax_percent;
 
         // Remove the Management Fee
-        $commissionWoMgFee = $propertyPrice * ($propertyPercentCommission/100);
+        $commissionWoMgFee = $propertyPrice * ($propertyPercentCommission/100) - $biayaLain1;
         $mgfeeValue = $commissionWoMgFee * (($mg_fee_percent+$mg_fee_tax_percent) /100);
         $commissionData["mg_fee_value"] = $mgfeeValue;
-        $commissionWithMgFee = (int)$commissionWoMgFee - $mgfeeValue;
+        $commissionWithMgFee = (int)$commissionWoMgFee - $mgfeeValue - $biayaLain2;
         $commissionData["commission_gross"] = $commissionWoMgFee;
 
         // ==== GET AGENT PERCENT COMMISSION PROGRESSIVE =====
@@ -757,7 +766,7 @@ class PropertyAgentController extends Base\CRUDReactController
         // ==== GET PPH AGENT COMMISSION PROGRESSIVE =====
         $pphAgent = $this->getPPHTax($agentId, $totalAgentWoPPH);
         $totalPPH = $pphAgent["total"];
-        $totalAgentWithPPH = $totalAgentWoPPH - $totalPPH;
+        $totalAgentWithPPH = $totalAgentWoPPH - $totalPPH - $biayaLain3;
 
         $commissionData["commission_net"] = $totalAgentWithPPH;
 

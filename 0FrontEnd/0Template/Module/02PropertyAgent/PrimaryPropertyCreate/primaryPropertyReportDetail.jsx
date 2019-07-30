@@ -15,8 +15,9 @@ const DefaultHeader = function(props){
         <div className={'header'}>
 
             <div className="row hidden-xs" >
-                <div className="col-xs-3" > Date </div>
-                <div className="col-xs-3" > Agent Name </div>
+                <div className="col-xs-2" > Date </div>
+                <div className="col-xs-2" > Keterangan Unit </div>
+                <div className="col-xs-2" > Agent Name </div>
                 <div className="col-xs-3" > Komisi </div>
                 <div className="col-xs-3" > Nilai Transaksi </div>
             </div>
@@ -31,8 +32,9 @@ const DefaultShowData = function(props){
     return(
         <React.Fragment>
             <div className="randyRow">
-                <div className="col-xs-3" > {props.item.date} </div>
-                <div className="col-xs-3" > {props.item.agent_name} </div>
+                <div className="col-xs-2" > {props.item.date} </div>
+                <div className="col-xs-2" > {props.item.property_note} </div>
+                <div className="col-xs-2" > {props.item.agent_name} </div>
                 <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.gross_commission)} </div>
                 <div className="col-xs-3" > {GalaxyHelper.numberWithCommas(props.item.property_value)} </div>
             </div>
@@ -157,10 +159,10 @@ export default class primaryPropertyReportDetail extends React.Component{
     render() {
         return (
             <div className="primaryPropertyReport">
-                {this.state.data &&
-                <div style={{float:"right", padding:"10px"}}>
-                    <Download props={this.state.data}/>
-                </div>}
+                {/*{this.state.data &&*/}
+                {/*<div style={{float:"right", padding:"10px"}}>*/}
+                    {/*<Download props={this.state.data}/>*/}
+                {/*</div>}*/}
                 <div style={{padding:"10px"}}>
                     <div className={"col-md-6"}>
                         <label className={"col-md-6"}>

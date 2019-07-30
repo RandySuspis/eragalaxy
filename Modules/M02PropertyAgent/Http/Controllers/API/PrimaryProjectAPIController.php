@@ -151,7 +151,7 @@ class PrimaryProjectAPIController extends Base\CRUDAPIController
 
         $transactionData = DB::table('transaction_property as b')
             ->leftJoin('property_agent as c', 'b.agent_id','c.id')
-            ->select('b.created_at as date', 'c.name as agent_name', 'b.gross_commission', 'b.property_value')
+            ->select('b.created_at as date', 'c.name as agent_name', 'b.gross_commission', 'b.property_value', 'b.property_note')
             ->where('b.property_id','=',$theId)
             ->whereBetween('b.created_at',[$startDate,$endDate])->get();
         $primaryData->transaction = $transactionData;

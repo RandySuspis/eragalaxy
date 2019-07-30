@@ -310,7 +310,7 @@ class PrimaryProjectController extends Base\CRUDReactController
 
         $result = $this->apiDetailCreator($id, "id", $sql, false, false);
 
-        $result["data"]->agent = DB::table("primary_project_coordinator")->select("agent_lister_id as id","percent_commission")->where("primary_project_id",$id)->get();
+        $result["data"]->agent = DB::table("primary_project_coordinator")->select("id","percent_commission")->where("primary_project_id",$id)->get();
         return response()->json($result, 200);
     }
 

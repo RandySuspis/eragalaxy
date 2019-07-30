@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e639509-3393-489e-8bd2-82f2ba8e08b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionUpdate/transactionUpdate.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/M03PropertyTransaction/Entities/TransactionProperty.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M03PropertyTransaction/Entities/TransactionProperty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,78 +27,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx">
+        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="339">
+              <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="172" column="62" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Database/Migrations/2019_04_01_100913_create_primary_project_and_secondary_project.php">
+        <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Routes/web.php">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate1.jsx">
+        <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-873">
-              <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+            <state relative-caret-position="68">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -102,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/0FrontEnd/2App/backend.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+            <state relative-caret-position="-42">
+              <caret line="22" column="110" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#100#123#0" expanded="true" />
@@ -113,13 +63,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/TransactionPrimaryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionUpdate/transactionUpdate.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="155" column="62" selection-start-line="155" selection-start-column="62" selection-end-line="155" selection-end-column="62" />
+            <state relative-caret-position="261">
+              <caret line="153" column="127" selection-start-line="153" selection-start-column="127" selection-end-line="153" selection-end-column="127" />
               <folding>
                 <element signature="e#64#92#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="19" selection-end-line="164" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -128,14 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>localhost:8080</find>
-      <find>js</find>
-      <find>abcd</find>
-      <find>mastermem</find>
-      <find>mastermember</find>
-      <find>alvonse@</find>
-      <find>css</find>
-      <find>import</find>
       <find>1123</find>
       <find>form-login</find>
       <find>remember_token</find>
@@ -158,6 +151,14 @@
       <find>format</find>
       <find>this.state</find>
       <find>this.state.form1</find>
+      <find>transaction/savetransaction</find>
+      <find>save</find>
+      <find>biaya_lain</find>
+      <find>onsubmit</find>
+      <find>lastcommission</find>
+      <find>relatedData</find>
+      <find>submitajaxcall</find>
+      <find>initial</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/Modules/M02PropertyAgent/Routes</dir>
@@ -170,10 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/0FrontEnd/2App/frontend.jsx" />
-        <option value="$PROJECT_DIR$/0FrontEnd/2App/frontend.scss" />
-        <option value="$PROJECT_DIR$/0FrontEnd/2App/backend.scss" />
-        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/01Login/Login/loginContainer.scss" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/01Login/Login/randy.scss" />
         <option value="$PROJECT_DIR$/Modules/M00Base/Resources/views/layout/login.blade.php" />
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
@@ -192,7 +189,6 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/AuthenticateWithSuperAdmin.php" />
         <option value="$PROJECT_DIR$/Modules/M01Login/Entities/Roles.php" />
         <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Routes/web.php" />
-        <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php" />
         <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionPrimaryController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_07_02_230147_migration_cartalyst_sentinel.php" />
         <option value="$PROJECT_DIR$/Modules/M01Login/Database/Seeders/M01LoginDatabaseSeeder.php" />
@@ -204,7 +200,6 @@
         <option value="$PROJECT_DIR$/Modules/M00Base/Resources/views/baseCRUDReact/formReport.blade.php" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/BranchOfficeController.php" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/BranchOfficeReport/index.scss" />
-        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php" />
         <option value="$PROJECT_DIR$/0FrontEnd/webpack.config.js" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php" />
         <option value="$PROJECT_DIR$/Modules/M00Base/Resources/views/layout/backendA.blade.php" />
@@ -213,14 +208,20 @@
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyList/primaryProjectListContainer.jsx" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php" />
-        <option value="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx" />
-        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php" />
+        <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Entities/TransactionProperty.php" />
+        <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php" />
+        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx" />
+        <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php" />
+        <option value="$PROJECT_DIR$/0FrontEnd/2App/backend.jsx" />
+        <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php" />
+        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionUpdate/transactionUpdate.jsx" />
         <option value="$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php" />
         <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx" />
-        <option value="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx" />
-        <option value="$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php" />
       </list>
     </option>
   </component>
@@ -427,7 +428,25 @@
               <item name="0Template" type="462c0819:PsiDirectoryNode" />
               <item name="Module" type="462c0819:PsiDirectoryNode" />
               <item name="02PropertyAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="PropertyAgentList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="0FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="0Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+              <item name="02PropertyAgent" type="462c0819:PsiDirectoryNode" />
               <item name="PropertyAgentReport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="0FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="0Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+              <item name="02PropertyAgent" type="462c0819:PsiDirectoryNode" />
+              <item name="TransactionPrimaryCreate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -445,6 +464,15 @@
               <item name="Module" type="462c0819:PsiDirectoryNode" />
               <item name="03TransactionCommission" type="462c0819:PsiDirectoryNode" />
               <item name="TransactionCreate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="0FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="0Template" type="462c0819:PsiDirectoryNode" />
+              <item name="Module" type="462c0819:PsiDirectoryNode" />
+              <item name="03TransactionCommission" type="462c0819:PsiDirectoryNode" />
+              <item name="TransactionUpdate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -506,112 +534,37 @@
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+              <item name="M01Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
+              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M00Base" type="462c0819:PsiDirectoryNode" />
-              <item name="Routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M01Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M01Login" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M01Login" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M01Login" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-              <item name="Seeders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
               <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
               <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="M02PropertyAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="Database" type="462c0819:PsiDirectoryNode" />
-              <item name="Migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="API" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -640,6 +593,28 @@
               <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
               <item name="Database" type="462c0819:PsiDirectoryNode" />
               <item name="Migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EraGalaxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="M03PropertyTransaction" type="462c0819:PsiDirectoryNode" />
+              <item name="Routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EraGalaxy" type="b2602c69:ProjectViewProjectNode" />
@@ -662,6 +637,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionUpdate" />
       <recent name="$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate" />
       <recent name="$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate" />
       <recent name="$PROJECT_DIR$" />
@@ -696,7 +672,7 @@
       <option name="presentableId" value="Default" />
       <updated>1563178303698</updated>
       <workItem from="1563178305084" duration="12374000" />
-      <workItem from="1563266032745" duration="103371000" />
+      <workItem from="1563266032745" duration="122817000" />
     </task>
     <task id="LOCAL-00001" summary="add agent report and office report [wip]">
       <created>1564048649736</created>
@@ -712,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564135819902</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add primary report detail [wip]">
+      <created>1564396316499</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564396316499</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115745000" />
+    <option name="totallyTimeSpent" value="135191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -751,68 +734,10 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="add agent report and office report [wip]" />
     <MESSAGE value="add office report and primary report" />
-    <option name="LAST_COMMIT_MESSAGE" value="add office report and primary report" />
+    <MESSAGE value="add primary report detail [wip]" />
+    <option name="LAST_COMMIT_MESSAGE" value="add primary report detail [wip]" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Helper/GalaxyHelper.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyUpdate.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Entities/PrimaryProjectCoordinator.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Entities/PrimaryProject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding>
-            <element signature="e#52#105#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Routes/api.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/APIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/propertyAgentModule.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/00BaseCrud/BaseCrudDetail/BaseCrudDetail.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/00BaseCrud/BaseCrudReport/BaseCrudReport.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="57" column="32" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/M00Base/Resources/views/baseCRUDReact/formList.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -855,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="144" column="47" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
@@ -873,16 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-217">
           <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyCreate.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="120" column="30" selection-start-line="117" selection-start-column="28" selection-end-line="120" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,23 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M01Login/Database/Seeders/M01LoginDatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="85" column="39" selection-start-line="85" selection-start-column="39" selection-end-line="85" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/TransactionPrimaryCreate/transactionPrimaryCreate.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="123" column="51" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Shared/GalaxyHelper.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -980,46 +871,12 @@
     <entry file="file://$PROJECT_DIR$/Helper/RandyHelper.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Helper/RouteHelper.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/M00Base/Http/Controllers/Base/CRUDReactController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4058">
           <caret line="460" selection-start-line="460" selection-end-line="460" />
           <folding>
             <element signature="e#57#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
-          <folding>
-            <element signature="e#61#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1705">
-          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1044,12 +901,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Database/Migrations/2019_04_01_100913_create_primary_project_and_secondary_project.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -1060,10 +913,159 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate1.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M01Login/Database/Seeders/M01LoginDatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="27" column="53" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Entities/TransactionProperty.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="139" selection-start-line="12" selection-start-column="139" selection-end-line="12" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionPrimaryController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Helper/GalaxyHelper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dev/backend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2025">
+          <caret line="3072" column="12" selection-start-line="3072" selection-start-column="12" selection-end-line="3072" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="66" column="57" selection-start-line="66" selection-start-column="57" selection-end-line="66" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="163" column="20" selection-start-line="163" selection-start-column="20" selection-end-line="163" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="793">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PropertyAgentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="357" column="99" selection-start-line="357" selection-start-column="99" selection-end-line="357" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/TransactionPrimaryCreate/transactionPrimaryCreate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="123" column="51" selection-start-line="123" selection-start-column="51" selection-end-line="123" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Helper/RouteHelper.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyUpdate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyCreate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="62" column="42" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/TransactionPrimaryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/0FrontEnd/2App/backend.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="103" column="52" selection-start-line="103" selection-start-column="52" selection-end-line="103" selection-end-column="52" />
+        <state relative-caret-position="-42">
+          <caret line="22" column="110" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#100#123#0" expanded="true" />
@@ -1071,74 +1073,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PropertyAgentAPIController.php">
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Routes/web.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Http/Controllers/TransactionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        <state relative-caret-position="68">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Routes/api.php">
+    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/PrimaryProjectController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionUpdate/transactionUpdate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Http/Controllers/API/PrimaryProjectAPIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="155" column="62" selection-start-line="155" selection-start-column="62" selection-end-line="155" selection-end-column="62" />
+        <state relative-caret-position="261">
+          <caret line="153" column="127" selection-start-line="153" selection-start-column="127" selection-end-line="153" selection-end-column="127" />
           <folding>
             <element signature="e#64#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate2.jsx">
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReport.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-873">
-          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        <state relative-caret-position="193">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate1.jsx">
+    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/02PropertyAgent/PrimaryPropertyCreate/primaryPropertyReportDetail.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0FrontEnd/0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate1.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="172" column="62" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M02PropertyAgent/Database/Migrations/2019_04_01_100913_create_primary_project_and_secondary_project.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/M03PropertyTransaction/Database/Migrations/2019_04_01_105841_create_transaction_property_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="20" column="55" lean-forward="true" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
+        <state relative-caret-position="62">
+          <caret line="161" column="16" lean-forward="true" selection-start-line="161" selection-start-column="19" selection-end-line="164" selection-end-column="26" />
         </state>
       </provider>
     </entry>

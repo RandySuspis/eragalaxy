@@ -1,7 +1,8 @@
 <?php
 
 namespace Modules\M03PropertyTransaction\Http\Controllers;
-use http\Env\Request;
+use Illuminate\Http\Request ;
+use Illuminate\Support\Facades\DB;
 use Modules\M00Base\Http\Controllers\Base as Base;
 use Modules\M02PropertyAgent\Entities\DefaultSetting;
 
@@ -35,6 +36,24 @@ class TransactionController extends Base\CRUDReactController
         ]);
     }
 
-
+    public function edit(Request $request, $theId)
+    {
+        $data = DB::table($this->tableName)->find($theId);
+        if (!$data) {
+            abort(404);
+        }
+        return view("base::baseCRUDReact/formUpdate")->with([
+            "typeColumns"=>$this->_getFinalTypeColumn(),
+            "inputStructure"=>$this->_columnStructure(),
+            "moduleBaseUrl"=>$this->moduleBaseUrl,
+            "JS" => [
+                'mainId'=> "transactionUpdate",
+                "inputStructure"=>json_encode($this->_columnStructure()),
+                'baseUrl'=> "'$this->moduleBaseUrl'",
+                'csrf_token' => "'".csrf_token()."'",
+                'dataId' =>$theId
+            ]
+        ]);
+    }
 
 }

@@ -59,9 +59,12 @@ export default class TransactionCreate1 extends React.Component{
             agent_id_label: this.props.formData.agent_id_label,
             property_id: this.props.formData.property_id,
             property_id_label: this.props.formData.property_id_label,
+            property_note: this.props.formData.property_note,
             property_value:this.props.formData.property_value,
             percent_commission:this.props.formData.percent_commission,
-            mg_fee_percent:mgFee
+            biaya_lain_1:this.props.formData.biaya_lain_1,
+            mg_fee_percent:mgFee,
+            biaya_lain_2:this.props.formData.biaya_lain_2
         };
         this.state.initialValue = initialValue;
         this.countKomisi(initialValue, this.setRandyInitialValue);
@@ -114,17 +117,23 @@ export default class TransactionCreate1 extends React.Component{
 
     countKomisi = (values, setFieldValue) => {
         var newStartCommission = 0;
-        if (values.property_value && values.percent_commission){
+        if ((values.property_value && values.percent_commission)){
             var str = values.property_value.replace(/\./g, "");
             var propertyValueInt= parseInt(str);
             var percentCommissionInt= parseFloat(values.percent_commission);
-            newStartCommission = propertyValueInt * percentCommissionInt/100;
+            var biaya_lain_1 = 0;
+            if(!!values.biaya_lain_1)
+                biaya_lain_1=parseInt(values.biaya_lain_1.replace(/\./g, ""));
+            newStartCommission = propertyValueInt * percentCommissionInt/100 - biaya_lain_1;
             setFieldValue("start_commission", Math.floor(newStartCommission));
         }
 
-        if (newStartCommission && values.mg_fee_percent){
+        if ((newStartCommission && values.mg_fee_percent)){
             var mgFeePercent= parseFloat(values.mg_fee_percent);
-            var lastCommission = newStartCommission - (newStartCommission * mgFeePercent / 100);
+            var biaya_lain_2 = 0;
+            if(!!values.biaya_lain_2)
+                biaya_lain_2=parseInt(values.biaya_lain_2.replace(/\./g, ""));
+            var lastCommission = newStartCommission - (newStartCommission * mgFeePercent / 100) - biaya_lain_2;
             setFieldValue("last_commission", Math.floor(lastCommission));
         }
         console.log("count count");
@@ -181,6 +190,10 @@ export default class TransactionCreate1 extends React.Component{
                                 field1={this.basicLayout("percent_commission","Transaksi Komisi", errors, touched,
                                     <FieldPercent name={"percent_commission"} placeholder={"persen Komisi"} onBlur={()=>this.countKomisi(values, setFieldValue)} /> )}
                             />
+                            <FormCol2Layout
+                                field1={this.basicLayout("biaya_lain_1","Biaya lain-lain (-)", errors, touched,
+                                    <FieldNumber name={"biaya_lain_1"} placeholder={"masukkan biaya lain-lain"} onBlur={()=>this.countKomisi(values, setFieldValue)}/> )}
+                            />
 
                             {/* ========================= */}
                             <span className={"col-xs-12 col-md-6"}>
@@ -197,6 +210,11 @@ export default class TransactionCreate1 extends React.Component{
                                 field1={this.basicLayout("mg_fee_percent","MF fee", errors, touched,
                                     <FieldPercent name={"mg_fee_percent"} placeholder={"Biaya Management"} onBlur={()=>this.countKomisi(values, setFieldValue)} /> )}
                             />
+
+                                <FormCol2Layout
+                                    field1={this.basicLayout("biaya_lain_2","Biaya lain-lain (-)", errors, touched,
+                                        <FieldNumber name={"biaya_lain_2"} placeholder={"masukkan biaya lain-lain"} onBlur={()=>this.countKomisi(values, setFieldValue)}/> )}
+                                />
 
                             <span className={"col-xs-12 col-md-6"}>
                                 <LinePlus />

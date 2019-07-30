@@ -51,6 +51,11 @@ class CreateTransactionPropertyTable extends Migration
             $table->integer("tax_PPN_percent");
             $table->decimal("tax_PPN_number", 14, 0);
 
+            $table->string('property_note');
+            $table->decimal('biaya_lain_1',14,0);
+            $table->decimal('biaya_lain_2',14,0);
+            $table->decimal('biaya_lain_3',14,0);
+
             $table->softDeletes();
             $table->timestamps();
         });

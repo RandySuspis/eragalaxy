@@ -261,7 +261,12 @@ export default class TransactionPrimaryCreate2 extends React.Component{
         }
         setFieldValue("total_pph",totalPPh);
 
-        setFieldValue("total", totalCommission - totalPPh)
+        var biaya_lain_3 = 0;
+
+        if(!!values.biaya_lain_3)
+            biaya_lain_3 = parseInt(values.biaya_lain_3.replace(/\./g, ""));
+
+        setFieldValue("total", totalCommission - totalPPh - biaya_lain_3)
 
         this.countKomisiOffice(values, setFieldValue);
     }
@@ -477,6 +482,10 @@ export default class TransactionPrimaryCreate2 extends React.Component{
                                             <FormCol1Layout
                                                 field1={this.basicLayoutRupiah("total_pph","PPh Rp", errors, touched,
                                                     <FieldNumber name={"total_pph"} placeholder="0" disabled={true} /> )}
+                                            />
+                                            <FormCol1Layout
+                                                field1={this.basicLayout("biaya_lain_3","Biaya lain-lain (-)", errors, touched,
+                                                    <FieldNumber name={"biaya_lain_3"} placeholder={"masukkan biaya lain-lain"} onBlur={()=>this.countKomisi(values, setFieldValue)}/> )}
                                             />
                                         </span>
                                                 </div>

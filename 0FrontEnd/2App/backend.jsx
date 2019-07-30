@@ -20,6 +20,7 @@ import PrimaryPropertyReportDetail from "../0Template/Module/02PropertyAgent/Pri
 // import TransactionPrimaryCreate from "../0Template/Module/02PropertyAgent/TransactionPrimaryCreate/transactionPrimaryCreate.jsx"
 
 import TransactionCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate.jsx"
+import TransactionUpdate from "../0Template/Module/03TransactionCommission/TransactionUpdate/transactionUpdate.jsx"
 import TransactionPrimaryCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx"
 import PropertyAgentReport from "../0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx";
 
@@ -103,6 +104,7 @@ if ('PRIMARYPROJECT') {
 if ('TRANSACTIONPRIMARY'){
     callContainer('transactionPrimaryCreate', <TransactionPrimaryCreate/>)
     callContainer('transactionCreate', <TransactionCreate/>)
+    callContainer('transactionUpdate', <TransactionUpdate/>)
 }
 
 console.log("gila kamu");
