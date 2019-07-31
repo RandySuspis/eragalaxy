@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import request from "../../../Shared/RequestWrapper.jsx";
-import TransactionCreate from "./../TransactionCreate/transactionCreate.jsx";
+import TransactionPrimaryCreate from "./../TransactionCreate/transactionPrimaryCreate.jsx";
 
-export default class TransactionUpdate extends React.Component{
+export default class TransactionPrimaryUpdate extends React.Component{
     constructor() {
         super();
         var ajaxCall = "/"+baseUrl+"/detail/ajax";
@@ -43,7 +43,7 @@ export default class TransactionUpdate extends React.Component{
     render() {
         return (
             <React.Fragment>
-            {this.state.initialValue && <TransactionCreate initialValue={this.state.initialValue} isEdit={true} submitAjaxCall={this.state.submitAjaxCall}/> }
+            {this.state.initialValue && <TransactionPrimaryCreate initialValue={this.state.initialValue} isEdit={true} submitAjaxCall={this.state.submitAjaxCall}/> }
             </React.Fragment>
         )
     }

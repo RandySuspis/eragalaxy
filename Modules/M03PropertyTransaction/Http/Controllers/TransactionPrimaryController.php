@@ -1,7 +1,8 @@
 <?php
 
 namespace Modules\M03PropertyTransaction\Http\Controllers;
-use http\Env\Request;
+use Illuminate\Http\Request ;
+use Illuminate\Support\Facades\DB;
 use Modules\M00Base\Http\Controllers\Base as Base;
 use Modules\M02PropertyAgent\Entities\DefaultSetting;
 
@@ -34,6 +35,39 @@ class TransactionPrimaryController extends Base\CRUDReactController
         ]);
     }
 
+    public function edit(Request $request, $theId)
+    {
+        $data = DB::table($this->tableName)->find($theId);
+        if (!$data) {
+            abort(404);
+        }
+        if($data->property_id==null){
+            return redirect('transaction/update/'.$theId);
+        }
+        return view("base::baseCRUDReact/formUpdate")->with([
+            "typeColumns"=>$this->_getFinalTypeColumn(),
+            "inputStructure"=>$this->_columnStructure(),
+            "moduleBaseUrl"=>$this->moduleBaseUrl,
+            "JS" => [
+                'mainId'=> "transactionPrimaryUpdate",
+                "inputStructure"=>json_encode($this->_columnStructure()),
+                'baseUrl'=> "'$this->moduleBaseUrl'",
+                'csrf_token' => "'".csrf_token()."'",
+                'dataId' =>$theId
+            ]
+        ]);
+    }
 
+    public function apiDetail(Request $request)
+    {
+        $sql = $this->_baseSQLForController();
+        $id = $request->input('id');
+        $sql = $sql->where('id',$id);
+
+        $result = $this->apiDetailCreator($id, "id", $sql, false, false);
+
+//        $result["data"]->agent = DB::table("primary_project_coordinator")->select("id","percent_commission")->where("primary_project_id",$id)->get();
+        return response()->json($result, 200);
+    }
 
 }

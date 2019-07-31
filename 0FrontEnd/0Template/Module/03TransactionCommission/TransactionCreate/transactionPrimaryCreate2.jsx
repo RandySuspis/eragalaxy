@@ -11,6 +11,7 @@ import {
     FormCol4BonusSection,
     LinePlus
 } from "./sharedColumnForm.jsx"
+import propTypes from "prop-types";
 
 export default class TransactionPrimaryCreate2 extends React.Component{
     constructor() {
@@ -25,6 +26,7 @@ export default class TransactionPrimaryCreate2 extends React.Component{
     }
 
     componentWillMount() {
+        console.log(this.props);
         var createAjaxCall = "/"+baseUrl+"/create/";
         var submitAjaxCall = this.props.submitAjaxCall?this.props.submitAjaxCall:createAjaxCall;
         var initialValue = {
@@ -52,7 +54,8 @@ export default class TransactionPrimaryCreate2 extends React.Component{
             commission_value:this.props.relatedData.agentData.total_agent,
             office_value:this.props.relatedData.agentData.total_office,
 
-
+            biaya_lain_3:this.props.formData.biaya_lain_3,
+            subsd:this.props.subsd,
         };
 
         if (this.props.relatedData.lister){

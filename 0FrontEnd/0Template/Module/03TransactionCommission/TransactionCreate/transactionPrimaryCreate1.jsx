@@ -140,6 +140,8 @@ export default class TransactionCreate1 extends React.Component{
     }
 
     submitForm = (values, action) => {
+        console.log("halo")
+        console.log(values);
         this.props.onSubmit(2, values);
     }
 

@@ -6,6 +6,7 @@ import TransactionCreate3 from "./transactionCreate3.jsx";
 import TransactionSuccess from "./transactionCreate3.jsx";
 // import TransactionPrimaryCreate2 from "./transactionPrimaryCreate2.jsx";
 import request from "../../../Shared/RequestWrapper.jsx";
+import galaxyHelper from "../../../Shared/GalaxyHelper.jsx";
 
 
 export default class TransactionCreate extends React.Component{
@@ -15,7 +16,11 @@ export default class TransactionCreate extends React.Component{
         var ajaxCall = "/"+baseUrl+"/detail/ajax";
 
         this.state = {
-            whichForm : 1
+            whichForm : 1,
+            componentStatus: true,
+            isEdit: false,
+            form1: [],
+            form2: []
         };
     }
 
@@ -121,14 +126,50 @@ export default class TransactionCreate extends React.Component{
     }
 
     render(){
+        var data = this.props.initialValue?this.props.initialValue:{};
+        if(this.props.isEdit && !this.state.isEdit) {
+            this.state.isEdit=true
+            this.setState({
+                isEdit: true
+            })
+        }
+
+        if(data.hasOwnProperty('id') && this.state.componentStatus && this.state.isEdit) {
+            console.log(data)
+            var form1 = {
+                date: galaxyHelper.dateToDMY(new Date(data.transaction_date)),
+                agent_id: data.agent_id,
+                agent_id_label: data.agent_id_label,
+                property_id: data.property_id,
+                property_note_name: data.property_note_name,
+                property_note: data.property_note,
+                property_id_label: data.property_id_label,
+                property_value: data.property_value,
+                percent_commission: data.property_percent,
+                biaya_lain_1: data.biaya_lain_1,
+                biaya_lain_2: data.biaya_lain_2,
+                transaction_number: data.invoice_id
+            }
+            var form2 = {
+                biaya_lain_3: data.biaya_lain_3,
+                subsd: data.office_subsidy_percent,
+            }
+            this.setState({
+                form1: form1,
+                form2: form2,
+                componentStatus: false
+            })
+        }
+
         if (this.state.whichForm === 1){
             if (this.state.mgfee){
-                return (<TransactionCreate1 onSubmit={this.changeStateForm} relatedData={this.state}/>)
+                return (<TransactionCreate1 onSubmit={this.changeStateForm} formData={this.state.form1} relatedData={this.state} />)
             }
         }else if (this.state.whichForm === 2){
             if (this.state.agentData) {
                 return (<TransactionCreate2 onSubmit={this.changeStateForm}
                                             lastCommission={this.state.form1 ? this.state.form1.last_commission : 0}
+                                            formData={this.state.form2}
                                             backPrevForm={this.backForm}
                                             relatedData={this.state}/>)
             }

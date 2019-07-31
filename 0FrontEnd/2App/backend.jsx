@@ -22,6 +22,7 @@ import PrimaryPropertyReportDetail from "../0Template/Module/02PropertyAgent/Pri
 import TransactionCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionCreate.jsx"
 import TransactionUpdate from "../0Template/Module/03TransactionCommission/TransactionUpdate/transactionUpdate.jsx"
 import TransactionPrimaryCreate from "../0Template/Module/03TransactionCommission/TransactionCreate/transactionPrimaryCreate.jsx"
+import TransactionPrimaryUpdate from "../0Template/Module/03TransactionCommission/TransactionUpdate/transactionPrimaryUpdate.jsx"
 import PropertyAgentReport from "../0Template/Module/02PropertyAgent/PropertyAgentReport/propertyAgentReport.jsx";
 
 function callContainer(id, formCall){
@@ -103,6 +104,7 @@ if ('PRIMARYPROJECT') {
 
 if ('TRANSACTIONPRIMARY'){
     callContainer('transactionPrimaryCreate', <TransactionPrimaryCreate/>)
+    callContainer('transactionPrimaryUpdate', <TransactionPrimaryUpdate/>)
     callContainer('transactionCreate', <TransactionCreate/>)
     callContainer('transactionUpdate', <TransactionUpdate/>)
 }
