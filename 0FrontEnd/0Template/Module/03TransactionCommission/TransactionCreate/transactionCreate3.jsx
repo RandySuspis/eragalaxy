@@ -253,7 +253,7 @@ export default class TransactionCreate3 extends React.Component{
                                     <div className="col-md-6">
                                         <FormCol1Layout
                                             field1={this.basicLayoutGeneralInfo("nomor_transaksi","Nomor Transaksi", touched,
-                                                "____ ____/______" )}
+                                                this.props.form1.transaction_number?this.props.form1.transaction_number:"____ ____/______" )}
                                         />
                                         <div className="col-xs-12 comission-result calculation-result">
                                             <FormCol1Layout

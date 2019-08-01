@@ -31,31 +31,31 @@ export default class TransactionPrimaryCreate2 extends React.Component{
         var submitAjaxCall = this.props.submitAjaxCall?this.props.submitAjaxCall:createAjaxCall;
         var initialValue = {
             langsungCair: 1,
-            pph_1: this.props.relatedData.taxData.pph_1,
-            pph_2: this.props.relatedData.taxData.pph_2,
-            pph_3: this.props.relatedData.taxData.pph_3,
-            pph_4: this.props.relatedData.taxData.pph_4,
+            pph_1: this.props.formData.pph_1? this.props.formData.pph_1:this.props.relatedData.taxData.pph_1,
+            pph_2: this.props.formData.pph_2? this.props.formData.pph_2:this.props.relatedData.taxData.pph_2,
+            pph_3: this.props.formData.pph_3? this.props.formData.pph_3:this.props.relatedData.taxData.pph_3,
+            pph_4: this.props.formData.pph_4? this.props.formData.pph_4:this.props.relatedData.taxData.pph_4,
 
-            commission_1: this.props.relatedData.agentData.commission_percent[0],
-            commission_2: this.props.relatedData.agentData.commission_percent[1],
-            commission_3: this.props.relatedData.agentData.commission_percent[2],
-            commission_4: this.props.relatedData.agentData.commission_percent[3],
+            commission_1: this.props.formData.commission_1? this.props.formData.commission_1:this.props.relatedData.agentData.commission_percent[0],
+            commission_2: this.props.formData.commission_2? this.props.formData.commission_2:this.props.relatedData.agentData.commission_percent[1],
+            commission_3: this.props.formData.commission_3? this.props.formData.commission_3:this.props.relatedData.agentData.commission_percent[2],
+            commission_4: this.props.formData.commission_4? this.props.formData.commission_4:this.props.relatedData.agentData.commission_percent[3],
 
             commission_1_value: this.props.relatedData.agentData.commission_calculate[0],
             commission_2_value: this.props.relatedData.agentData.commission_calculate[1],
             commission_3_value: this.props.relatedData.agentData.commission_calculate[2],
             commission_4_value: this.props.relatedData.agentData.commission_calculate[3],
 
-            ppn: this.props.relatedData.taxData.ppn,
-            previous_commission:this.props.relatedData.agentData.commission_gross,
-            agent_percent_commission:this.props.relatedData.agentData.percent_commission,
-            office_percent_commission:this.props.relatedData.agentData.office_commission,
+            ppn: this.props.formData.ppn? this.props.formData.ppn:this.props.relatedData.taxData.ppn,
+            previous_commission: this.props.relatedData.agentData.commission_gross,
+            agent_percent_commission: this.props.formData.agent_percent_commission? this.props.formData.agent_percent_commission:this.props.relatedData.agentData.percent_commission,
+            office_percent_commission: this.props.formData.office_percent_commission? this.props.formData.office_percent_commission:this.props.relatedData.agentData.office_commission,
             input_commission:this.props.lastCommission,
             commission_value:this.props.relatedData.agentData.total_agent,
             office_value:this.props.relatedData.agentData.total_office,
 
             biaya_lain_3:this.props.formData.biaya_lain_3,
-            subsd:this.props.subsd,
+            subsd:this.props.formData.subsd,
         };
 
         if (this.props.relatedData.lister){
@@ -234,6 +234,9 @@ export default class TransactionPrimaryCreate2 extends React.Component{
 
             setFieldValue("office_subsd", values.subsd);
             setFieldValue("office_subsd_value", Math.floor(subsdValue));
+        } else {
+            setFieldValue("subsd", 0);
+            setFieldValue("subsd_value", 0);
         }
 
         if (values.agent_x && values.input_commission){
@@ -269,7 +272,7 @@ export default class TransactionPrimaryCreate2 extends React.Component{
         if(!!values.biaya_lain_3)
             biaya_lain_3 = parseInt(values.biaya_lain_3.replace(/\./g, ""));
 
-        setFieldValue("total", totalCommission - totalPPh - biaya_lain_3)
+        setFieldValue("total", Math.floor(totalCommission - totalPPh - biaya_lain_3))
 
         this.countKomisiOffice(values, setFieldValue);
     }
@@ -572,9 +575,9 @@ export default class TransactionPrimaryCreate2 extends React.Component{
                                                         />
 
                                                         <FormCol2Layout2
-                                                            field1={this.basicLayoutPercentField("subsd","Subsd-", errors, touched,
+                                                            field1={this.basicLayoutPercentField("office_subsd","Subsd-", errors, touched,
                                                                 <FieldPercent name={"office_subsd"} placeholder="0%" onBlur={()=>this.countKomisi(values, setFieldValue)} disabled={true}/> )}
-                                                            field2={this.basicLayoutRupiah("subsd_value","Rp", errors, touched,
+                                                            field2={this.basicLayoutRupiah("office_subsd_value","Rp", errors, touched,
                                                                 <FieldNumber name={"office_subsd_value"} placeholder={"0"} disabled={true}/>)}
                                                         />
                                                     </div>

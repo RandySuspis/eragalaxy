@@ -401,6 +401,7 @@ class PropertyAgentController extends Base\CRUDReactController
         $form1 = $request->form1;
         $form1 = json_decode($form1);
         $form2 = $request->form2;
+        $formData = $form2;
         $form2 = json_decode($form2);
 
         $transactionDate = Carbon::createFromFormat('d-m-Y', $form1->date);
@@ -460,8 +461,9 @@ class PropertyAgentController extends Base\CRUDReactController
                 "biaya_lain_1"=> $biaya_lain_1,
                 "biaya_lain_2"=> $biaya_lain_2,
                 "biaya_lain_3"=> $biaya_lain_3,
+                "formData" => $formData,
                 "created_at" => Carbon::now()->toDateTimeString(),
-                "updated_at" => Carbon::now()->toDateTimeString()
+                "updated_at" => Carbon::now()->toDateTimeString(),
             ]);
 
             $propertyId = null;
@@ -504,6 +506,212 @@ class PropertyAgentController extends Base\CRUDReactController
             ]);
 
             OfficeTax::create([
+                "office_id"=> $transactionAgent->office_id,
+                "transaction_id"=> $transactionId,
+                "invoice_id"=> $invoiceId,
+                "tax_number"=> $commissionData['ppn_number'],
+                "type"=> "PPN",
+            ]);
+        }else{
+            $termin1 = $form2->termin_1;
+            $termin1Percent = $termin1->percent;
+            $termin1DateStr = $termin1->date;
+            $termin1Date = Carbon::createFromFormat('d-m-Y', $termin1DateStr);
+            $termin2 = $form2->termin_2;
+            $termin2Percent = $termin2->percent;
+            $termin2DateStr = $termin2->date;
+            $termin2Date = Carbon::createFromFormat('d-m-Y', $termin2DateStr);
+
+            $transactionId = TransactionPropertyPending::insertGetId([
+                "invoice_id"=> $invoiceId,
+                "agent_id"=> $agentId,
+                "office_id"=> $transactionAgent->office_id,
+                "property_id"=> $propertyId,
+                "property_value"=> $propertyPrice,
+                "payment_date"=> $termin1Date,
+                "transaction_date"=> $transactionDate,
+                "direct_payment"=> false,
+                "property_percent"=> $percentCommission*($termin1Percent/100),
+                "gross_commission"=>$commissionData["commission_gross"],
+                "mg_fee_percent"=> ($commissionData['mg_fee'] + $commissionData['mg_fee_tax']),
+                "mg_fee_number"=> $commissionData['mg_fee_value'],
+                "agent_commission_percent"=> $commissionData['percent_commission'],
+                "agent_commission_number"=> $commissionData['commission_net'],
+                "agent_pph_number"=> $commissionData['pph_total'],
+                "agent_end_commission"=> $commissionData['commission_net'],
+                "office_commission_percent"=> $commissionData['office_commission'],
+                "office_commission_number"=> $commissionData['total_office'],
+                "tax_PPN_percent"=> $commissionData['ppn'],
+                "tax_PPN_number"=> $commissionData['ppn_number'],
+                "office_subsidy_percent"=> $commissionData['subsidi'],
+                "office_subsidy_number"=> $commissionData['subsidi_number'],
+                "office_end_commission"=> $commissionData['total_office_wo_bonus'],
+                "created_at" => Carbon::now()->toDateTimeString(),
+                "updated_at" => Carbon::now()->toDateTimeString()
+            ]);
+
+            $transactionId = TransactionPropertyPending::insertGetId([
+                "invoice_id"=> $invoiceId,
+                "agent_id"=> $agentId,
+                "property_id"=> $propertyId,
+                "office_id"=> $transactionAgent->office_id,
+                "property_value"=> $propertyPrice,
+                "payment_date"=> $termin2Date,
+                "transaction_date"=> $transactionDate,
+                "direct_payment"=> false,
+                "property_percent"=> $percentCommission*($termin2Percent/100),
+                "gross_commission"=>$commissionData["commission_gross"],
+                "mg_fee_percent"=> ($commissionData['mg_fee'] + $commissionData['mg_fee_tax']),
+                "mg_fee_number"=> $commissionData['mg_fee_value'],
+                "agent_commission_percent"=> $commissionData['percent_commission'],
+                "agent_commission_number"=> $commissionData['commission_net'],
+                "agent_pph_number"=> $commissionData['pph_total'],
+                "agent_end_commission"=> $commissionData['commission_net'],
+                "office_commission_percent"=> $commissionData['office_commission'],
+                "office_commission_number"=> $commissionData['total_office'],
+                "tax_PPN_percent"=> $commissionData['ppn'],
+                "tax_PPN_number"=> $commissionData['ppn_number'],
+                "office_subsidy_percent"=> $commissionData['subsidi'],
+                "office_subsidy_number"=> $commissionData['subsidi_number'],
+                "office_end_commission"=> $commissionData['total_office_wo_bonus'],
+                "created_at" => Carbon::now()->toDateTimeString(),
+                "updated_at" => Carbon::now()->toDateTimeString()
+            ]);
+        }
+
+        return "success";
+    }
+
+    protected function updateTransactionData(Request $request)
+    {
+        /*
+        * 1. Form 1
+        *  a. Start to write the percent commission (Commission Gross)
+        *  b. start to commission fee (the 5.5%)
+        * 2. Form 2
+        *  a. Calculate Agent Commission (Tax PPH as well)
+        *  b. Calculate Office Commission ()
+        *  c. Calculate Bonus Commission
+        * 3. create Invoice number
+        *  a.
+        * 4. Start to input to database
+        *  a. Save to Transaction or pending transaction depends on the "Cair"
+        *  b. Save Agent Tax - including bonus commissionTax
+        *  c. Save Office Tax
+        *  d. Save bonus Commission
+        * */
+
+        $form1 = $request->form1;
+        $form1 = json_decode($form1);
+        $form2 = $request->form2;
+        $formData = $form2;
+        $form2 = json_decode($form2);
+        $transactionId = $request->theId;
+
+        $transactionDate = Carbon::createFromFormat('d-m-Y', $form1->date);
+
+        $agentId = $form1->agent_id;
+        $propertyPrice = str_replace(".", "", $form1->property_value."");
+        $percentCommission = str_replace("%", "", $form1->percent_commission."");
+        $propertyNote = isset($form1->property_note)?$form1->property_note:"No Description";
+        $subsidiPercent = isset($form2->subsd)?(int)$form2->subsd:0;
+        $propertyId = isset($form1->property_id)?(int)$form1->property_id:null;
+        $biaya_lain_1 = !empty($form1->biaya_lain_1)?str_replace(".", "", $form1->biaya_lain_1.""):0;
+        $biaya_lain_2 = !empty($form1->biaya_lain_2)?str_replace(".", "", $form1->biaya_lain_2.""):0;
+        $biaya_lain_3 = !empty($form2->biaya_lain_3)?str_replace(".", "", $form2->biaya_lain_3.""):0;
+
+        $result = $this->calculateTransactionData($biaya_lain_1, $biaya_lain_2, $biaya_lain_3, $propertyPrice, $percentCommission, $subsidiPercent, $propertyId, $agentId);
+        $commissionData= $result["commissionData"];
+        $bonusData= $result["bonusData"];
+
+        // ======== CREATE INVOICE ID =====================
+        $transactionAgent = PropertyAgent::find($agentId);
+
+        $from = Carbon::today()->toDateTimeString();
+        $to = Carbon::tomorrow()->toDateTimeString();
+        // use agent commission as there's many type of transaction in different table (primary, secondary, kpr, blt dkk)
+        $totalTransactionToday = AgentCommission::whereBetween('created_at', [$from, $to])->get();
+        $isPrimary = false;
+        if (isset($form1->property_id)) {
+            $isPrimary = true;
+        }
+        $invoiceId = isset($form1->transaction_number)? $form1->transaction_number:$this->createInvoiceNumber($agentId, date("dmy"), count($totalTransactionToday), $isPrimary);
+        if ($form2->langsungCair == 1) {
+            TransactionProperty::whereId($transactionId)->update([
+                "invoice_id"=> $invoiceId,
+                "agent_id"=> $agentId,
+                "office_id"=> $transactionAgent->office_id,
+                "property_id"=> $propertyId,
+                "property_value"=> $propertyPrice,
+                "payment_date"=> $transactionDate,
+                "transaction_date"=> $transactionDate,
+                "direct_payment"=> true,
+                "property_percent"=> $percentCommission,
+                "gross_commission"=>$commissionData["commission_gross"],
+                "mg_fee_percent"=> ($commissionData['mg_fee'] + $commissionData['mg_fee_tax']),
+                "mg_fee_number"=> $commissionData['mg_fee_value'],
+                "agent_commission_percent"=> $commissionData['percent_commission'],
+                "agent_commission_number"=> $commissionData['commission_net'],
+                "agent_pph_number"=> $commissionData['pph_total'],
+                "agent_end_commission"=> $commissionData['commission_net'],
+                "office_commission_percent"=> $commissionData['office_commission'],
+                "office_commission_number"=> $commissionData['total_office'],
+                "tax_PPN_percent"=> $commissionData['ppn'],
+                "tax_PPN_number"=> $commissionData['ppn_number'],
+                "office_subsidy_percent"=> $commissionData['subsidi'],
+                "office_subsidy_number"=> $commissionData['subsidi_number'],
+                "office_end_commission"=> $commissionData['total_office_wo_bonus'],
+                "property_note"=> $propertyNote,
+                "biaya_lain_1"=> $biaya_lain_1,
+                "biaya_lain_2"=> $biaya_lain_2,
+                "biaya_lain_3"=> $biaya_lain_3,
+                "formData" => $formData
+            ]);
+
+            $propertyId = null;
+            if (isset($form1->property_id)) {
+                $propertyId = $form1->property_id;
+            }
+
+            // ========= Calculate Bonus Commission ============
+            $bonus = $form2->bonus;
+            foreach ($bonusData as $bonusKey => $bonus) {
+                $theId = BonusCommission::where("invoice_id","=",$invoiceId)->where("type","=",$bonus['label'])->get('id');
+                // Save each bonus to each person
+                BonusCommission::whereId($theId)->update([
+                    "invoice_id"=> $invoiceId,
+                    "transaction_id"=> $transactionId,
+                    "agent_id"=> $bonus['id'],
+                    "property_id"=> $propertyId?$propertyId:0,
+                    "bonus_commission"=> $bonus['bonus_value'],
+                    "type"=> $bonus['label'],
+                ]);
+            }
+
+            // ========= Calculate Agent Commission ============
+            $theId = AgentCommission::where("invoice_id","=",$invoiceId)->get('id');
+            AgentCommission::whereId($theId)->update([
+                "agent_id"=> $agentId,
+                "transaction_id"=> $transactionId,
+                "invoice_id"=> $invoiceId,
+                "commission_gross"=> $commissionData['commission_gross'],
+                "pph_value"=> $commissionData['pph_total'],
+                "commission_net"=> $commissionData['commission_net'],
+                "type"=> "Komisi",
+            ]);
+
+            // ========= Populate Tax ============
+            $theId = AgentTax::where("invoice_id","=",$invoiceId)->get('id');
+            AgentTax::whereId($theId)->update([
+                "agent_id"=> $agentId,
+                "transaction_id"=> $transactionId,
+                "invoice_id"=> $invoiceId,
+                "tax_number"=> $commissionData['pph_total'],
+                "type"=> "PPH",
+            ]);
+
+            $theId = OfficeTax::where("invoice_id","=",$invoiceId)->get('id');
+            OfficeTax::whereId($theId)->update([
                 "office_id"=> $transactionAgent->office_id,
                 "transaction_id"=> $transactionId,
                 "invoice_id"=> $invoiceId,
@@ -695,6 +903,7 @@ class PropertyAgentController extends Base\CRUDReactController
     }
 
     protected function calculateTransactionData($biayaLain1, $biayaLain2, $biayaLain3, $propertyPrice, $propertyPercentCommission,  $subsidi, $propertyId, $agentId){
+
         /*
         * 1. Form 1
         *  a. Start to write the percent commission (Commission Gross)
@@ -745,7 +954,6 @@ class PropertyAgentController extends Base\CRUDReactController
 
 
         $percentArray = [50, 55, 60, 65];
-
         // getting the one from formal commission
         $resultCommission = calculateProgressive($agentCommissionGross, $commissionWithMgFee, [300, 600, 900, 1000000], [300, 300, 300, 1000000], $percentArray);
         $totalAgentWoPPH = 0;

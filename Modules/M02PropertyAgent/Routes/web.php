@@ -41,4 +41,5 @@ Route::middleware(["auth"])->group(function(){
     Route::get('/agent/getTransactionAgentRelatedData', 'PropertyAgentController@getAgentTransactionRelatedData');
     Route::get('/agent/getTransactionPropertyRelatedData', 'PropertyAgentController@getPropertyTransactionRelatedData');
     Route::post('/transaction/saveTransaction', 'PropertyAgentController@saveTransactionData');
+    Route::post('/transaction/updateTransaction', 'PropertyAgentController@updateTransactionData');
 

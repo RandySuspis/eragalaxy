@@ -20,7 +20,9 @@ export default class TransactionCreate extends React.Component{
             componentStatus: true,
             isEdit: false,
             form1: [],
-            form2: []
+            form2: [],
+            submitAjaxCall: "/transaction/saveTransaction",
+            theId: 0
         };
     }
 
@@ -80,10 +82,12 @@ export default class TransactionCreate extends React.Component{
 
     changeStateForm = (stateForm, formValues) => {
         if (stateForm == 2){
-            this.setState({
-                whichForm:stateForm,
-                form1:formValues
-            })
+            // this.setState({
+            //     whichForm:stateForm,
+            //     form1:formValues
+            // })
+            this.state.whichForm = stateForm;
+            this.state.form1 = formValues;
             this.callAgentRelatedData();
         }else if (stateForm == 3){
             this.setState({
@@ -108,7 +112,7 @@ export default class TransactionCreate extends React.Component{
 
     submitAllData=()=>{
         request({
-            url: "/transaction/saveTransaction",
+            url: this.state.submitAjaxCall,
             method: 'post',
             params:   {
                 form1 : this.state.form1,
@@ -125,21 +129,41 @@ export default class TransactionCreate extends React.Component{
         })
     }
 
+    updateAllData=()=>{
+        request({
+            url: this.state.submitAjaxCall,
+            method: 'post',
+            params:   {
+                form1 : this.state.form1,
+                form2 : this.state.form2,
+                theId : this.state.theId
+            }
+        }).then(response => {
+            console.log(response);
+            if (response.status === 200 && response.statusText === "OK"){
+                // window.location.href = "/"+this.state.baseUrl;
+                this.setState({responseMessage:"Success"});
+            }else{
+                this.setState({responseMessage:"Error"});
+            }
+        })
+    }
+
     render(){
         var data = this.props.initialValue?this.props.initialValue:{};
         if(this.props.isEdit && !this.state.isEdit) {
             this.state.isEdit=true
+            this.state.theId=this.props.theId
             this.setState({
                 isEdit: true
             })
         }
 
         if(data.hasOwnProperty('id') && this.state.componentStatus && this.state.isEdit) {
-            console.log(data)
             var form1 = {
                 date: galaxyHelper.dateToDMY(new Date(data.transaction_date)),
                 agent_id: data.agent_id,
-                agent_id_label: data.agent_id_label,
+                agent_id_label: this.props.agent_id_label,
                 property_id: data.property_id,
                 property_note_name: data.property_note_name,
                 property_note: data.property_note,
@@ -150,14 +174,13 @@ export default class TransactionCreate extends React.Component{
                 biaya_lain_2: data.biaya_lain_2,
                 transaction_number: data.invoice_id
             }
-            var form2 = {
-                biaya_lain_3: data.biaya_lain_3,
-                subsd: data.office_subsidy_percent,
-            }
+            var form2 = JSON.parse(data.formData)
             this.setState({
+                theId: this.props.theId,
                 form1: form1,
                 form2: form2,
-                componentStatus: false
+                componentStatus: false,
+                submitAjaxCall: this.props.submitAjaxCall
             })
         }
 
@@ -174,7 +197,10 @@ export default class TransactionCreate extends React.Component{
                                             relatedData={this.state}/>)
             }
         }else if (this.state.whichForm === 3){
-            return (<TransactionCreate3 onSubmit={this.submitAllData} form1={this.state.form1} form2={this.state.form2}  backPrevForm={this.backForm} responseMessage={this.state.responseMessage}/>)
+            if (!this.props.isEdit)
+                return (<TransactionCreate3 onSubmit={this.submitAllData} form1={this.state.form1} form2={this.state.form2}  backPrevForm={this.backForm} responseMessage={this.state.responseMessage}/>)
+            else
+                return (<TransactionCreate3 onSubmit={this.updateAllData} form1={this.state.form1} form2={this.state.form2}  backPrevForm={this.backForm} responseMessage={this.state.responseMessage}/>)
         }
         return "loading";
 

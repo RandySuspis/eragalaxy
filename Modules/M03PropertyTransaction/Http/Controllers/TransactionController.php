@@ -5,6 +5,7 @@ use Illuminate\Http\Request ;
 use Illuminate\Support\Facades\DB;
 use Modules\M00Base\Http\Controllers\Base as Base;
 use Modules\M02PropertyAgent\Entities\DefaultSetting;
+use Modules\M02PropertyAgent\Entities\PropertyAgent;
 
 
 class TransactionController extends Base\CRUDReactController
@@ -64,8 +65,10 @@ class TransactionController extends Base\CRUDReactController
         $sql = $this->_baseSQLForController();
         $id = $request->input('id');
         $sql = $sql->where('id',$id);
+        $sql->coba = "abc";
 
         $result = $this->apiDetailCreator($id, "id", $sql, false, false);
+        $result['agent_id_label'] = PropertyAgent::whereId($result['data']->agent_id)->get('name')->first()->name;
 
 //        $result["data"]->agent = DB::table("primary_project_coordinator")->select("id","percent_commission")->where("primary_project_id",$id)->get();
         return response()->json($result, 200);
